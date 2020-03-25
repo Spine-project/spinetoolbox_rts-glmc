@@ -13,21 +13,61 @@
         "connections": [
             {
                 "from": [
-                    "input_DB",
+                    "output_par_importer",
                     "right"
                 ],
                 "to": [
-                    "Spine_RTS_GMLC",
+                    "output_DB",
                     "left"
                 ]
             },
             {
                 "from": [
-                    "data_files",
+                    "output_par_importer",
                     "right"
                 ],
                 "to": [
+                    "input_DB",
+                    "bottom"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "data_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
                     "left"
                 ]
             },
@@ -43,61 +83,21 @@
             },
             {
                 "from": [
-                    "output_par_def",
+                    "data_files",
                     "right"
                 ],
                 "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Spine_RTS_GMLC",
-                    "bottom"
-                ],
-                "to": [
-                    "output_DB",
-                    "right"
-                ]
-            },
-            {
-                "from": [
                     "data_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
                     "left"
                 ]
             },
             {
                 "from": [
-                    "data_importer_ts",
-                    "right"
-                ],
-                "to": [
                     "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_importer",
                     "right"
                 ],
                 "to": [
-                    "input_DB",
-                    "bottom"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
-                    "output_DB",
+                    "Spine_RTS_GMLC",
                     "left"
                 ]
             }
@@ -163,29 +163,29 @@
         "Data Connections": {
             "data_files": {
                 "short name": "data_files",
-                "description": "All original data files to be converted",
+                "description": "",
                 "x": -598.1483472991612,
                 "y": -194.5895038438797,
                 "references": [
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "dataset/gen.xlsx"
+                        "path": "datasets/gen.xlsx"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "dataset/branch_bus_detailed.xlsx"
+                        "path": "datasets/branch_bus_detailed.xlsx"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "dataset/branch.xlsx"
+                        "path": "datasets/branch.xlsx"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "dataset/storage.xlsx"
+                        "path": "datasets/storage.xlsx"
                     }
                 ]
             },
@@ -198,7 +198,7 @@
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "dataset/TimeSeries.xlsx"
+                        "path": "datasets/TimeSeries.xlsx"
                     }
                 ]
             },
@@ -211,7 +211,7 @@
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "dataset/output_parameters.xlsx"
+                        "path": "datasets/output_parameters.xlsx"
                     }
                 ]
             },
@@ -224,7 +224,7 @@
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "dataset/results.xlsx"
+                        "path": "datasets/results.xlsx"
                     }
                 ]
             }
