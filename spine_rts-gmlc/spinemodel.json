@@ -1,0 +1,17 @@
+{
+    "name": "SpineModel",
+    "description": "",
+    "tooltype": "julia",
+    "execute_in_work": false,
+    "includes": [
+        "Spine_RTS-GMLC.jl"
+    ],
+    "inputfiles": [
+        "toolbox_input\\input_DB.sqlite"
+    ],
+    "inputfiles_opt": [],
+    "outputfiles": [
+        "output_db\\output_DB.sqlite"
+    ],
+    "cmdline_args": ""
+}

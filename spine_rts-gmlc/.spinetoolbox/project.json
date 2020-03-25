@@ -1,0 +1,272 @@
+{
+    "project": {
+        "version": 1,
+        "name": "Spine_RTS-GMLC",
+        "description": "A tutorial case study",
+        "tool_specifications": [
+            {
+                "type": "path",
+                "relative": true,
+                "path": "spinemodel.json"
+            }
+        ],
+        "connections": [
+            {
+                "from": [
+                    "input_DB",
+                    "right"
+                ],
+                "to": [
+                    "Spine_RTS_GMLC",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files",
+                    "right"
+                ],
+                "to": [
+                    "data_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_ts",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_ts",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "bottom"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
+                    "output_DB",
+                    "left"
+                ]
+            }
+        ]
+    },
+    "objects": {
+        "Data Stores": {
+            "input_DB": {
+                "short name": "input_db",
+                "description": "",
+                "x": -279.59870747418944,
+                "y": -99.55143115850456,
+                "url": {
+                    "dialect": "sqlite",
+                    "username": "",
+                    "password": "",
+                    "host": "",
+                    "port": "",
+                    "database": {
+                        "type": "path",
+                        "relative": true,
+                        "path": ".spinetoolbox/items/input_db/input_DB.sqlite"
+                    }
+                }
+            },
+            "output_DB": {
+                "short name": "output_db",
+                "description": "",
+                "x": -236.50140436702748,
+                "y": 65.70227106631387,
+                "url": {
+                    "dialect": "sqlite",
+                    "username": "",
+                    "password": "",
+                    "host": "",
+                    "port": "",
+                    "database": {
+                        "type": "path",
+                        "relative": true,
+                        "path": ".spinetoolbox/items/output_db/output_DB.sqlite"
+                    }
+                }
+            },
+            "toolbox_input": {
+                "short name": "toolbox_input",
+                "description": "",
+                "x": 54.356115313720494,
+                "y": -87.03151840522057,
+                "url": {
+                    "dialect": "sqlite",
+                    "username": "",
+                    "password": "",
+                    "host": "",
+                    "port": "",
+                    "database": {
+                        "type": "path",
+                        "relative": true,
+                        "path": ".spinetoolbox/items/toolbox_input/input_DB.sqlite"
+                    }
+                }
+            }
+        },
+        "Data Connections": {
+            "data_files": {
+                "short name": "data_files",
+                "description": "All original data files to be converted",
+                "x": -598.1483472991612,
+                "y": -194.5895038438797,
+                "references": [
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "dataset/gen.xlsx"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "dataset/branch_bus_detailed.xlsx"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "dataset/branch.xlsx"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "dataset/storage.xlsx"
+                    }
+                ]
+            },
+            "data_files_ts": {
+                "short name": "data_files_ts",
+                "description": "",
+                "x": -634.847575709299,
+                "y": -39.15843150917431,
+                "references": [
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "dataset/TimeSeries.xlsx"
+                    }
+                ]
+            },
+            "output_par_def": {
+                "short name": "output_par_def",
+                "description": "",
+                "x": -674.045760672937,
+                "y": 68.85868928745647,
+                "references": [
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "dataset/output_parameters.xlsx"
+                    }
+                ]
+            },
+            "results": {
+                "short name": "results",
+                "description": "",
+                "x": 46.196946079923066,
+                "y": 37.87372634952532,
+                "references": [
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "dataset/results.xlsx"
+                    }
+                ]
+            }
+        },
+        "Tools": {
+            "Spine_RTS_GMLC": {
+                "short name": "spine_rts_gmlc",
+                "description": "",
+                "x": -107.75052032875462,
+                "y": -119.94155887667176,
+                "tool": "SpineModel",
+                "execute_in_work": false,
+                "cmd_line_args": []
+            }
+        },
+        "Views": {},
+        "Importers": {
+            "data_importer": {
+                "short name": "data_importer",
+                "description": "Convert data files into Spine DB",
+                "x": -441.5340074444975,
+                "y": -193.5791216459723,
+                "mappings": [],
+                "cancel_on_error": true
+            },
+            "data_importer_ts": {
+                "short name": "data_importer_ts",
+                "description": "",
+                "x": -461.60205186630446,
+                "y": -65.84364913669151,
+                "mappings": [],
+                "cancel_on_error": true
+            },
+            "output_par_importer": {
+                "short name": "output_par_importer",
+                "description": "",
+                "x": -459.62441867234384,
+                "y": 69.6835371427146,
+                "mappings": [],
+                "cancel_on_error": true
+            }
+        },
+        "Exporters": {}
+    }
+}
