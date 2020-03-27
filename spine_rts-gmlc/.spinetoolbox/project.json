@@ -13,71 +13,11 @@
         "connections": [
             {
                 "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
-                    "output_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
                     "input_DB",
-                    "bottom"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_ts",
                     "right"
                 ],
                 "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
                     "Spine_RTS_GMLC",
-                    "bottom"
-                ],
-                "to": [
-                    "output_DB",
-                    "right"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_def",
-                    "right"
-                ],
-                "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_ts",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_ts",
                     "left"
                 ]
             },
@@ -93,11 +33,71 @@
             },
             {
                 "from": [
-                    "input_DB",
+                    "data_files_ts",
                     "right"
                 ],
                 "to": [
+                    "data_importer_ts",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "bottom"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
+                    "output_DB",
                     "left"
                 ]
             }
@@ -192,8 +192,8 @@
             "data_files_ts": {
                 "short name": "data_files_ts",
                 "description": "",
-                "x": -634.847575709299,
-                "y": -39.15843150917431,
+                "x": -624.9364614844815,
+                "y": -66.06002726225057,
                 "references": [
                     {
                         "type": "path",
@@ -205,8 +205,8 @@
             "output_par_def": {
                 "short name": "output_par_def",
                 "description": "",
-                "x": -674.045760672937,
-                "y": 68.85868928745647,
+                "x": -649.9759118412372,
+                "y": 63.19519544470357,
                 "references": [
                     {
                         "type": "path",
@@ -1802,12 +1802,12 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "rel_unit__commodity__commodity",
                                 "rel_unit__cmmdty__dir-gen",
-                                "rel_u__n__d-bus_detailed",
-                                "rel_unit__commodity__direction",
                                 "obj_unit",
-                                "rel_unit__commodity"
+                                "rel_unit__commodity",
+                                "rel_unit__commodity__direction",
+                                "rel_unit__commodity__commodity",
+                                "rel_unit__node__direction"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -1818,8 +1818,8 @@
             "data_importer_ts": {
                 "short name": "data_importer_ts",
                 "description": "",
-                "x": -464.43379878768087,
-                "y": -36.110306462238796,
+                "x": -444.61157033804574,
+                "y": -63.01190221531505,
                 "mappings": [
                     [
                         {
@@ -2354,8 +2354,8 @@
             "output_par_importer": {
                 "short name": "output_par_importer",
                 "description": "",
-                "x": -459.62441867234384,
-                "y": 69.6835371427146,
+                "x": -439.8021902227087,
+                "y": 66.85179022133815,
                 "mappings": [
                     [
                         {
