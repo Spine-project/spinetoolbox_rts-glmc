@@ -45,8 +45,8 @@ using SpineModel
 
 # key part for model running
 
-input_url = "sqlite:///$(@__DIR__)/input_db/input_DB.sqlite"
-output_url = "sqlite:///$(@__DIR__)/output_db/output_DB.sqlite"
+input_url = "sqlite:///$(@__DIR__)/.spinetoolbox/items/input_db/input_DB.sqlite"
+output_url = "sqlite:///$(@__DIR__)/.spinetoolbox/items/output_db/output_DB.sqlite"
 
 m = run_spinemodel(input_url, output_url; cleanup=true) #, extend=m->constraint_stor_cyclic(m))
 
