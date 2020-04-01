@@ -13,71 +13,11 @@
         "connections": [
             {
                 "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
-                    "output_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
                     "input_DB",
-                    "bottom"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_ts",
                     "right"
                 ],
                 "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
                     "Spine_RTS_GMLC",
-                    "bottom"
-                ],
-                "to": [
-                    "output_DB",
-                    "right"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_def",
-                    "right"
-                ],
-                "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_ts",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_ts",
                     "left"
                 ]
             },
@@ -93,11 +33,71 @@
             },
             {
                 "from": [
-                    "input_DB",
+                    "data_files_ts",
                     "right"
                 ],
                 "to": [
+                    "data_importer_ts",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "bottom"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
+                    "output_DB",
                     "left"
                 ]
             }
@@ -108,7 +108,7 @@
             "input_DB": {
                 "short name": "input_db",
                 "description": "",
-                "x": -279.59870747418944,
+                "x": -278.5203582117582,
                 "y": -99.55143115850456,
                 "url": {
                     "dialect": "sqlite",
@@ -126,8 +126,8 @@
             "output_DB": {
                 "short name": "output_db",
                 "description": "",
-                "x": -234.33947626521024,
-                "y": 67.86419916813105,
+                "x": -199.83099563568112,
+                "y": 55.82593205119342,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -144,7 +144,7 @@
             "toolbox_input": {
                 "short name": "toolbox_input",
                 "description": "",
-                "x": 52.194187211903305,
+                "x": 54.35218996849469,
                 "y": -89.19344650703775,
                 "url": {
                     "dialect": "sqlite",
@@ -164,7 +164,7 @@
             "data_files": {
                 "short name": "data_files",
                 "description": "",
-                "x": -598.1483472991612,
+                "x": -652.0658104207241,
                 "y": -194.5895038438797,
                 "references": [
                     {
@@ -192,8 +192,8 @@
             "data_files_ts": {
                 "short name": "data_files_ts",
                 "description": "",
-                "x": -624.9364614844815,
-                "y": -66.06002726225057,
+                "x": -650.8168437828316,
+                "y": -61.746630212525545,
                 "references": [
                     {
                         "type": "path",
@@ -206,7 +206,7 @@
                 "short name": "output_par_def",
                 "description": "",
                 "x": -648.8936388129202,
-                "y": 63.19519544470357,
+                "y": 67.5085924944286,
                 "references": [
                     {
                         "type": "path",
@@ -246,7 +246,7 @@
                 "short name": "data_importer",
                 "description": "Convert data files into Spine DB",
                 "x": -444.7782085746316,
-                "y": -193.5791216459723,
+                "y": -192.67719761373482,
                 "mappings": [
                     [
                         {
@@ -511,10 +511,10 @@
                                 }
                             },
                             "selected_tables": [
-                                "obj_storage_1",
-                                "rel_storage__commodity",
                                 "rel_stor-eff",
-                                "obj_storage"
+                                "rel_storage__commodity",
+                                "obj_storage",
+                                "obj_storage_1"
                             ],
                             "source_type": "ExcelConnector",
                             "table_types": {
@@ -881,12 +881,12 @@
                                 }
                             },
                             "selected_tables": [
+                                "rel_node__commodity",
                                 "rel_connection__node__node",
                                 "rel_node__temporal_block",
-                                "rel_node__commodity",
+                                "rel_connection__node",
                                 "rel_connection__direction_node",
-                                "obj_connection",
-                                "rel_connection__node"
+                                "obj_connection"
                             ],
                             "source_type": "ExcelConnector",
                             "table_types": {
@@ -2269,10 +2269,10 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
+                                "obj_node_res-gen",
                                 "obj_tmp_2",
                                 "obj_tmp_1",
-                                "obj_node_demand",
-                                "obj_node_res-gen"
+                                "obj_node_demand"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -2284,7 +2284,7 @@
                 "short name": "output_par_importer",
                 "description": "",
                 "x": -439.8021902227087,
-                "y": 66.85179022133815,
+                "y": 67.93013948376941,
                 "mappings": [
                     [
                         {
