@@ -1,1 +1,3 @@
 git+https://github.com/Spine-project/Spine-Toolbox#egg=spinetoolbox@dev
+git+https://github.com/Spine-project/Spine-Model@dev
+git+https://github.com/Spine-project/SpineInterface.jl@master
