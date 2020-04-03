@@ -126,8 +126,8 @@
             "output_DB": {
                 "short name": "output_db",
                 "description": "",
-                "x": -199.83099563568112,
-                "y": 55.82593205119342,
+                "x": -198.2820427261813,
+                "y": 58.923837870193125,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -334,33 +334,6 @@
                                         "import_objects": true
                                     }
                                 ],
-                                "obj_storage_1": [
-                                    {
-                                        "map_type": "ObjectClass",
-                                        "name": {
-                                            "map_type": "column",
-                                            "reference": 0
-                                        },
-                                        "parameters": {
-                                            "map_type": "parameter",
-                                            "name": {
-                                                "map_type": "column",
-                                                "reference": 2
-                                            },
-                                            "parameter_type": "single value",
-                                            "value": {
-                                                "map_type": "column",
-                                                "reference": 3
-                                            }
-                                        },
-                                        "skip_columns": [],
-                                        "read_start_row": 0,
-                                        "objects": {
-                                            "map_type": "column",
-                                            "reference": 1
-                                        }
-                                    }
-                                ],
                                 "rel_stor-eff": [
                                     {
                                         "map_type": "RelationshipClass",
@@ -464,6 +437,33 @@
                                         ],
                                         "import_objects": true
                                     }
+                                ],
+                                "obj_node": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            }
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": {
+                                            "map_type": "column",
+                                            "reference": 1
+                                        }
+                                    }
                                 ]
                             },
                             "table_options": {
@@ -488,13 +488,6 @@
                                     "read_until_col": true,
                                     "read_until_row": true
                                 },
-                                "obj_storage_1": {
-                                    "header": true,
-                                    "row": 0,
-                                    "column": 0,
-                                    "read_until_col": true,
-                                    "read_until_row": true
-                                },
                                 "rel_stor-eff": {
                                     "header": true,
                                     "row": 0,
@@ -508,13 +501,20 @@
                                     "column": 0,
                                     "read_until_col": true,
                                     "read_until_row": true
+                                },
+                                "obj_node": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": true,
+                                    "read_until_row": true
                                 }
                             },
                             "selected_tables": [
-                                "rel_stor-eff",
-                                "rel_storage__commodity",
+                                "obj_node",
+                                "rel_stor_eff-bus_detailed",
                                 "obj_storage",
-                                "obj_storage_1"
+                                "rel_storage__commodity"
                             ],
                             "source_type": "ExcelConnector",
                             "table_types": {
@@ -536,12 +536,6 @@
                                     "1": "string",
                                     "2": "string"
                                 },
-                                "obj_storage_1": {
-                                    "0": "string",
-                                    "1": "string",
-                                    "2": "string",
-                                    "3": "string"
-                                },
                                 "rel_stor-eff": {
                                     "0": "string",
                                     "1": "string",
@@ -557,6 +551,12 @@
                                     "3": "string",
                                     "4": "string",
                                     "5": "float"
+                                },
+                                "obj_node": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string"
                                 }
                             },
                             "table_row_types": {}
@@ -880,14 +880,7 @@
                                     "read_until_row": true
                                 }
                             },
-                            "selected_tables": [
-                                "rel_node__commodity",
-                                "rel_connection__node__node",
-                                "rel_node__temporal_block",
-                                "rel_connection__node",
-                                "rel_connection__direction_node",
-                                "obj_connection"
-                            ],
+                            "selected_tables": [],
                             "source_type": "ExcelConnector",
                             "table_types": {
                                 "branch": {
@@ -1329,7 +1322,14 @@
                                 }
                             },
                             "table_row_types": {},
-                            "selected_tables": [],
+                            "selected_tables": [
+                                "rel_connection__direction_node",
+                                "obj_connection",
+                                "rel_node__temporal_block",
+                                "rel_connection__node__node",
+                                "rel_node__commodity",
+                                "rel_connection__node"
+                            ],
                             "source_type": "ExcelConnector"
                         }
                     ],
@@ -1736,9 +1736,9 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "rel_unit__node__node",
                                 "obj_unit",
-                                "rel_unit__direction_node"
+                                "rel_u__d_n-bus_detailed",
+                                "rel_u__n__n-bus_detailed"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -2008,7 +2008,8 @@
                                     "0": "string",
                                     "1": "float",
                                     "2": "float",
-                                    "3": "float"
+                                    "3": "float",
+                                    "4": "float"
                                 },
                                 "obj_node_bus-demand": {
                                     "0": "string",
@@ -2084,7 +2085,8 @@
                                     "70": "float",
                                     "71": "float",
                                     "72": "float",
-                                    "73": "float"
+                                    "73": "float",
+                                    "74": "float"
                                 },
                                 "obj_node_res-gen": {
                                     "0": "string",
@@ -2269,10 +2271,10 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_node_res-gen",
                                 "obj_tmp_2",
+                                "obj_node_res-gen",
                                 "obj_tmp_1",
-                                "obj_node_demand"
+                                "obj_node_bus-demand"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -2284,7 +2286,7 @@
                 "short name": "output_par_importer",
                 "description": "",
                 "x": -439.8021902227087,
-                "y": 67.93013948376941,
+                "y": 66.38118657426955,
                 "mappings": [
                     [
                         {
