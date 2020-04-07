@@ -13,21 +13,61 @@
         "connections": [
             {
                 "from": [
-                    "input_DB",
+                    "output_par_importer",
                     "right"
                 ],
                 "to": [
-                    "Spine_RTS_GMLC",
+                    "output_DB",
                     "left"
                 ]
             },
             {
                 "from": [
-                    "data_files",
+                    "output_par_importer",
                     "right"
                 ],
                 "to": [
+                    "input_DB",
+                    "bottom"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "data_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
                     "left"
                 ]
             },
@@ -43,61 +83,21 @@
             },
             {
                 "from": [
-                    "output_par_def",
+                    "data_files",
                     "right"
                 ],
                 "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Spine_RTS_GMLC",
-                    "bottom"
-                ],
-                "to": [
-                    "output_DB",
-                    "right"
-                ]
-            },
-            {
-                "from": [
                     "data_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
                     "left"
                 ]
             },
             {
                 "from": [
-                    "data_importer_ts",
-                    "right"
-                ],
-                "to": [
                     "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_importer",
                     "right"
                 ],
                 "to": [
-                    "input_DB",
-                    "bottom"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
-                    "output_DB",
+                    "Spine_RTS_GMLC",
                     "left"
                 ]
             }
@@ -108,8 +108,8 @@
             "input_DB": {
                 "short name": "input_db",
                 "description": "",
-                "x": -278.5203582117582,
-                "y": -99.55143115850456,
+                "x": -276.35843960512034,
+                "y": -96.3085532485477,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -164,8 +164,8 @@
             "data_files": {
                 "short name": "data_files",
                 "description": "",
-                "x": -652.0658104207241,
-                "y": -194.5895038438797,
+                "x": -645.5800546008104,
+                "y": -191.34662593392284,
                 "references": [
                     {
                         "type": "path",
@@ -512,9 +512,9 @@
                             },
                             "selected_tables": [
                                 "obj_node",
-                                "rel_stor_eff-bus_detailed",
+                                "rel_storage__commodity",
                                 "obj_storage",
-                                "rel_storage__commodity"
+                                "rel_stor_eff-bus_detailed"
                             ],
                             "source_type": "ExcelConnector",
                             "table_types": {
@@ -2271,9 +2271,9 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
+                                "obj_tmp_1",
                                 "obj_tmp_2",
                                 "obj_node_res-gen",
-                                "obj_tmp_1",
                                 "obj_node_bus-demand"
                             ],
                             "source_type": "ExcelConnector"
