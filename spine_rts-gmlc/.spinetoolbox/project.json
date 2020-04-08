@@ -109,7 +109,7 @@
                 "short name": "input_db",
                 "description": "",
                 "x": -276.35843960512034,
-                "y": -96.3085532485477,
+                "y": -95.22759394522876,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -1736,9 +1736,9 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
+                                "rel_u__n__n-bus_detailed",
                                 "obj_unit",
-                                "rel_u__d_n-bus_detailed",
-                                "rel_u__n__n-bus_detailed"
+                                "rel_u__d_n-bus_detailed"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -1957,6 +1957,33 @@
                                             "map_type": "None"
                                         }
                                     }
+                                ],
+                                "obj_tmp_3": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            }
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": {
+                                            "map_type": "column",
+                                            "reference": 1
+                                        }
+                                    }
                                 ]
                             },
                             "table_options": {
@@ -2001,6 +2028,13 @@
                                     "column": 0,
                                     "read_until_col": false,
                                     "read_until_row": false
+                                },
+                                "obj_tmp_3": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": true,
+                                    "read_until_row": true
                                 }
                             },
                             "table_types": {
@@ -2267,14 +2301,21 @@
                                     "79": "string",
                                     "80": "string",
                                     "81": "string"
+                                },
+                                "obj_tmp_3": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string"
                                 }
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_tmp_1",
                                 "obj_tmp_2",
+                                "obj_node_bus-demand",
                                 "obj_node_res-gen",
-                                "obj_node_bus-demand"
+                                "obj_tmp_1",
+                                "obj_tmp_3"
                             ],
                             "source_type": "ExcelConnector"
                         }
