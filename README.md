@@ -8,7 +8,6 @@ This case can be used to test and verify the functionality of Spine model along 
 ![image](https://user-images.githubusercontent.com/43530784/78877326-5847cd00-7a59-11ea-9e8e-18f450cbc0fd.png)
 Source: [C. Barrows et al. (2020)](https://ieeexplore.ieee.org/document/8753693/metrics#metrics)
 
-
 ## System components modelling schema
 ### Generation unit
 #### Dispatchable unit (Coal, Gas, Oil and Nuclear)
@@ -21,7 +20,6 @@ In SpineModel:
 ### Storage
 ### Node as flow aggregator (Demand)
 ### Transmission line
-
 
 ## License
 Spine Model is licensed under GNU Lesser General Public License version 3.0 or later.
