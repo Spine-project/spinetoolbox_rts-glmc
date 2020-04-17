@@ -16,7 +16,7 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #############################################################################
-using JuMP
+# using JuMP
 using SpineModel
 # using SpineInterface
 # try
@@ -52,13 +52,8 @@ using SpineModel
 input_url = "sqlite:///$(@__DIR__)/.spinetoolbox/items/input_db/input_DB.sqlite"
 output_url = "sqlite:///$(@__DIR__)/.spinetoolbox/items/output_db/output_DB.sqlite"
 
-m = run_spinemodel(input_url, output_url; cleanup=true) #, add_constraints=m->constraint_ramping(m))
-
-# m = try
-#     run_spinemodel(db_url; optimizer=Gurobi.Optimizer, cleanup=false, extend=m->constraint_stor_cyclic(m))
-# catch
-#     run_spinemodel(db_url; optimizer=Cbc.Optimizer, cleanup=false, extend=m->constraint_stor_cyclic(m))
-# end
+m = run_spinemodel(input_url, output_url; cleanup=true)
+# optional keywords: with_optimizer=optimizer_with_attributes(Cbc.Optimizer), add_constraints=m->constraint_ramping(m)
 
 # Show active variables and constraints
 println("*** Active constraints: ***")
