@@ -1227,6 +1227,41 @@
                                             "reference": 1
                                         }
                                     }
+                                ],
+                                "rel_node__commodity_ptdf": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "None"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 2
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
                                 ]
                             },
                             "table_options": {
@@ -1306,6 +1341,13 @@
                                     "column": 0,
                                     "read_until_col": false,
                                     "read_until_row": false
+                                },
+                                "rel_node__commodity_ptdf": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": true,
+                                    "read_until_row": true
                                 }
                             },
                             "table_types": {
@@ -1454,17 +1496,22 @@
                                     "12": "string",
                                     "13": "string",
                                     "14": "string"
+                                },
+                                "rel_node__commodity_ptdf": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string"
                                 }
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_commodity_ptdf",
+                                "rel_connection__node__node",
                                 "rel_node__temporal_block",
-                                "rel_connection__direction_node",
-                                "obj_connection_ptdf",
-                                "rel_node__commodity",
                                 "obj_node_ptdf",
-                                "rel_connection__node__node"
+                                "rel_node__commodity_ptdf",
+                                "obj_commodity_ptdf",
+                                "rel_connection__direction_node",
+                                "obj_connection_ptdf"
                             ],
                             "source_type": "ExcelConnector"
                         }
