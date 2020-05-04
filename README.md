@@ -5,7 +5,7 @@ This case can be used to test and verify the functionality of Spine model along 
 
 ## Results comparison
 ### Power Generation Category for a July 10–15 Day-Ahead Simulation
-![image](https://user-images.githubusercontent.com/43530784/78877326-5847cd00-7a59-11ea-9e8e-18f450cbc0fd.png)
+![image](https://user-images.githubusercontent.com/43530784/80970132-5b996300-8e23-11ea-9632-4ebb2c083c53.png)
 Source: [C. Barrows et al. (2020)](https://ieeexplore.ieee.org/document/8753693/metrics#metrics)
 
 ## System components modelling schema
