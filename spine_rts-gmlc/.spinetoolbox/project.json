@@ -106,6 +106,7 @@
     "objects": {
         "Data Stores": {
             "input_DB": {
+                "type": "Data Store",
                 "short name": "input_db",
                 "description": "",
                 "x": -268.93343799433217,
@@ -124,6 +125,7 @@
                 }
             },
             "output_DB": {
+                "type": "Data Store",
                 "short name": "output_db",
                 "description": "",
                 "x": -196.47601296050644,
@@ -142,6 +144,7 @@
                 }
             },
             "toolbox_input": {
+                "type": "Data Store",
                 "short name": "toolbox_input",
                 "description": "",
                 "x": 54.35218996849469,
@@ -160,6 +163,7 @@
                 }
             },
             "ds_test": {
+                "type": "Data Store",
                 "short name": "ds_test",
                 "description": "",
                 "x": 53.65441167027713,
@@ -173,13 +177,14 @@
                     "database": {
                         "type": "path",
                         "relative": false,
-                        "path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp/ptdf_input_unit_constraints.sqlite"
+                        "path": "C:/HJY_projects/spine/model/examples/data/test_systemA5.sqlite"
                     }
                 }
             }
         },
         "Data Connections": {
             "data_files": {
+                "type": "Data Connection",
                 "short name": "data_files",
                 "description": "",
                 "x": -645.5800546008104,
@@ -208,6 +213,7 @@
                 ]
             },
             "data_files_ts": {
+                "type": "Data Connection",
                 "short name": "data_files_ts",
                 "description": "",
                 "x": -650.8168437828316,
@@ -221,6 +227,7 @@
                 ]
             },
             "output_par_def": {
+                "type": "Data Connection",
                 "short name": "output_par_def",
                 "description": "",
                 "x": -648.8936388129202,
@@ -234,6 +241,7 @@
                 ]
             },
             "results": {
+                "type": "Data Connection",
                 "short name": "results",
                 "description": "",
                 "x": 53.763694436283224,
@@ -249,6 +257,7 @@
         },
         "Tools": {
             "Spine_RTS_GMLC": {
+                "type": "Tool",
                 "short name": "spine_rts_gmlc",
                 "description": "",
                 "x": -107.75052032875462,
@@ -261,6 +270,7 @@
         "Views": {},
         "Importers": {
             "data_importer": {
+                "type": "Importer",
                 "short name": "data_importer",
                 "description": "Convert data files into Spine DB",
                 "x": -442.4948167462681,
@@ -1262,6 +1272,58 @@
                                         ],
                                         "import_objects": true
                                     }
+                                ],
+                                "rel_connection__node__node_ptdf": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "column",
+                                                "reference": 4
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "column",
+                                                "reference": 5
+                                            }
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 3
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
                                 ]
                             },
                             "table_options": {
@@ -1357,6 +1419,13 @@
                                     "read_until_row": true
                                 },
                                 "rel_node_group__node_ptdf": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": true,
+                                    "read_until_row": true
+                                },
+                                "rel_connection__node__node_ptdf": {
                                     "header": true,
                                     "row": 0,
                                     "column": 0,
@@ -1527,19 +1596,23 @@
                                     "2": "string",
                                     "3": "string",
                                     "4": "float"
+                                },
+                                "rel_connection__node__node_ptdf": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string",
+                                    "5": "float"
                                 }
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_node_ptdf",
-                                "rel_node__commodity",
-                                "rel_connection__node__node",
-                                "obj_node-group_ptdf",
-                                "obj_connection_ptdf",
-                                "rel_node__temporal_block_ptdf",
+                                "obj_connection",
                                 "rel_connection__direction_node",
-                                "obj_commodity_ptdf",
-                                "rel_node_group__node_ptdf"
+                                "rel_connection__node__node",
+                                "rel_node__temporal_block",
+                                "rel_node__commodity"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -1801,6 +1874,41 @@
                                         ],
                                         "import_objects": true
                                     }
+                                ],
+                                "rel_for_units_on_resolution": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "None"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 4
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
                                 ]
                             },
                             "table_options": {
@@ -1840,6 +1948,13 @@
                                     "read_until_row": true
                                 },
                                 "rel_u__d_n-bus_detailed": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": true,
+                                    "read_until_row": true
+                                },
+                                "rel_for_units_on_resolution": {
                                     "header": true,
                                     "row": 0,
                                     "column": 0,
@@ -1943,13 +2058,20 @@
                                     "2": "string",
                                     "3": "string",
                                     "4": "float"
+                                },
+                                "rel_for_units_on_resolution": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string"
                                 }
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_unit",
-                                "rel_u__d_n-bus_detailed",
-                                "rel_u__n__n-bus_detailed"
+                                "rel_u__n__n-bus_detailed",
+                                "rel_for_units_on_resolution",
+                                "rel_u__d_n-bus_detailed"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -1958,6 +2080,7 @@
                 "cancel_on_error": true
             },
             "data_importer_ts": {
+                "type": "Importer",
                 "short name": "data_importer_ts",
                 "description": "",
                 "x": -444.61157033804574,
@@ -2571,11 +2694,11 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_node_bus-demand_ptdf",
-                                "obj_tmp_3",
-                                "obj_tmp_1",
+                                "obj_tmp_2",
                                 "obj_node_res-gen",
-                                "obj_tmp_2"
+                                "obj_tmp_1",
+                                "obj_tmp_3",
+                                "obj_node_demand"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -2584,6 +2707,7 @@
                 "cancel_on_error": true
             },
             "output_par_importer": {
+                "type": "Importer",
                 "short name": "output_par_importer",
                 "description": "",
                 "x": -439.8021902227087,
