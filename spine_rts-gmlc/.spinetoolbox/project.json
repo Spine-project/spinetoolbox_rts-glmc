@@ -1608,10 +1608,14 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_connection",
+                                "obj_node_ptdf",
                                 "rel_connection__direction_node",
-                                "rel_connection__node__node",
-                                "rel_node__temporal_block",
+                                "obj_commodity_ptdf",
+                                "rel_connection__node__node_ptdf",
+                                "obj_connection_ptdf",
+                                "rel_node__temporal_block_ptdf",
+                                "rel_node_group__node_ptdf",
+                                "obj_node-group_ptdf",
                                 "rel_node__commodity"
                             ],
                             "source_type": "ExcelConnector"
@@ -2069,8 +2073,9 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "rel_u__n__n-bus_detailed",
                                 "rel_for_units_on_resolution",
+                                "rel_u__n__n-bus_detailed",
+                                "obj_unit",
                                 "rel_u__d_n-bus_detailed"
                             ],
                             "source_type": "ExcelConnector"
@@ -2694,11 +2699,11 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_tmp_2",
-                                "obj_node_res-gen",
                                 "obj_tmp_1",
+                                "obj_node_res-gen",
+                                "obj_node_bus-demand_ptdf",
                                 "obj_tmp_3",
-                                "obj_node_demand"
+                                "obj_tmp_2"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -2833,9 +2838,9 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
+                                "obj_report",
                                 "obj_output",
-                                "rel_report__output",
-                                "obj_report"
+                                "rel_report__output"
                             ],
                             "source_type": "ExcelConnector"
                         }
