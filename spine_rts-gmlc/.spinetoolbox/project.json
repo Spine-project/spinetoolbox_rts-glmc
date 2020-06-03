@@ -274,7 +274,7 @@
                 "short name": "data_importer",
                 "description": "Convert data files into Spine DB",
                 "x": -140.47409232405533,
-                "y": -106.82643395451564,
+                "y": -107.9201791710081,
                 "mappings": [
                     [
                         {
@@ -725,6 +725,85 @@
                                         ],
                                         "import_objects": true
                                     }
+                                ],
+                                "rel_node__stochastic_structure": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "None"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 2
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
+                                ],
+                                "rel__sto_struc__sto_scen": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "column",
+                                                "reference": 4
+                                            }
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 2
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
                                 ]
                             },
                             "table_options": {
@@ -771,6 +850,20 @@
                                     "read_until_row": false
                                 },
                                 "rel_connection__direction_node": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": true,
+                                    "read_until_row": true
+                                },
+                                "rel_node__stochastic_structure": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": true,
+                                    "read_until_row": true
+                                },
+                                "rel__sto_struc__sto_scen": {
                                     "header": true,
                                     "row": 0,
                                     "column": 0,
@@ -839,6 +932,18 @@
                                     "14": "string"
                                 },
                                 "rel_connection__direction_node": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "float"
+                                },
+                                "rel_node__stochastic_structure": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string"
+                                },
+                                "rel__sto_struc__sto_scen": {
                                     "0": "string",
                                     "1": "string",
                                     "2": "string",
@@ -1194,50 +1299,6 @@
                                         }
                                     }
                                 ],
-                                "rel_node_group__node_ptdf": [
-                                    {
-                                        "map_type": "RelationshipClass",
-                                        "name": {
-                                            "map_type": "column",
-                                            "reference": 0
-                                        },
-                                        "parameters": {
-                                            "map_type": "parameter",
-                                            "name": {
-                                                "map_type": "column",
-                                                "reference": 3
-                                            },
-                                            "parameter_type": "single value",
-                                            "value": {
-                                                "map_type": "column",
-                                                "reference": 4
-                                            }
-                                        },
-                                        "skip_columns": [],
-                                        "read_start_row": 0,
-                                        "objects": [
-                                            {
-                                                "map_type": "column",
-                                                "reference": 1
-                                            },
-                                            {
-                                                "map_type": "column",
-                                                "reference": 2
-                                            }
-                                        ],
-                                        "object_classes": [
-                                            {
-                                                "map_type": "column_header",
-                                                "reference": 1
-                                            },
-                                            {
-                                                "map_type": "column_header",
-                                                "reference": 2
-                                            }
-                                        ],
-                                        "import_objects": true
-                                    }
-                                ],
                                 "rel_node__temporal_block_ptdf": [
                                     {
                                         "map_type": "RelationshipClass",
@@ -1320,6 +1381,129 @@
                                             {
                                                 "map_type": "column_header",
                                                 "reference": 3
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
+                                ],
+                                "rel_node__stochastic_structure": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "None"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 2
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
+                                ],
+                                "rel_for_node_group_ptdf": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "column",
+                                                "reference": 5
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "column",
+                                                "reference": 6
+                                            }
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 4
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
+                                ],
+                                "rel__sto_struc__sto_scen": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "column",
+                                                "reference": 4
+                                            }
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 2
                                             }
                                         ],
                                         "import_objects": true
@@ -1418,14 +1602,28 @@
                                     "read_until_col": true,
                                     "read_until_row": true
                                 },
-                                "rel_node_group__node_ptdf": {
+                                "rel_connection__node__node_ptdf": {
                                     "header": true,
                                     "row": 0,
                                     "column": 0,
                                     "read_until_col": true,
                                     "read_until_row": true
                                 },
-                                "rel_connection__node__node_ptdf": {
+                                "rel_node__stochastic_structure": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": true,
+                                    "read_until_row": true
+                                },
+                                "rel_for_node_group_ptdf": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": true,
+                                    "read_until_row": true
+                                },
+                                "rel__sto_struc__sto_scen": {
                                     "header": true,
                                     "row": 0,
                                     "column": 0,
@@ -1590,13 +1788,6 @@
                                     "2": "string",
                                     "3": "float"
                                 },
-                                "rel_node_group__node_ptdf": {
-                                    "0": "string",
-                                    "1": "string",
-                                    "2": "string",
-                                    "3": "string",
-                                    "4": "float"
-                                },
                                 "rel_connection__node__node_ptdf": {
                                     "0": "string",
                                     "1": "string",
@@ -1604,19 +1795,42 @@
                                     "3": "string",
                                     "4": "string",
                                     "5": "float"
+                                },
+                                "rel_node__stochastic_structure": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string"
+                                },
+                                "rel_for_node_group_ptdf": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string",
+                                    "5": "string",
+                                    "6": "float"
+                                },
+                                "rel__sto_struc__sto_scen": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "float"
                                 }
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_node_ptdf",
-                                "rel_connection__direction_node",
                                 "obj_commodity_ptdf",
-                                "rel_connection__node__node_ptdf",
                                 "obj_connection_ptdf",
-                                "rel_node__temporal_block_ptdf",
-                                "rel_node_group__node_ptdf",
+                                "obj_node_ptdf",
                                 "obj_node-group_ptdf",
-                                "rel_node__commodity"
+                                "rel_for_node_group_ptdf",
+                                "rel_connection__direction_node",
+                                "rel_connection__node__node_ptdf",
+                                "rel_node__commodity",
+                                "rel__sto_struc__sto_scen",
+                                "rel_node__stochastic_structure",
+                                "rel_node__temporal_block_ptdf"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -2073,10 +2287,10 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "rel_for_units_on_resolution",
-                                "rel_u__n__n-bus_detailed",
                                 "obj_unit",
-                                "rel_u__d_n-bus_detailed"
+                                "rel_for_units_on_resolution",
+                                "rel_u__d_n-bus_detailed",
+                                "rel_u__n__n-bus_detailed"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -2084,10 +2298,38 @@
                 ],
                 "cancel_on_error": true,
                 "mapping_selection": [
-                    true,
-                    true,
-                    true,
-                    true
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "datasets/gen.xlsx"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "datasets/branch_bus_detailed.xlsx"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "datasets/branch.xlsx"
+                        },
+                        false
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "datasets/storage.xlsx"
+                        },
+                        true
+                    ]
                 ]
             },
             "data_importer_ts": {
@@ -2705,11 +2947,11 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_tmp_1",
-                                "obj_node_res-gen",
                                 "obj_node_bus-demand_ptdf",
-                                "obj_tmp_3",
-                                "obj_tmp_2"
+                                "obj_node_res-gen",
+                                "obj_tmp_1",
+                                "obj_tmp_2",
+                                "obj_tmp_3"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -2717,7 +2959,14 @@
                 ],
                 "cancel_on_error": true,
                 "mapping_selection": [
-                    true
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "datasets/TimeSeries.xlsx"
+                        },
+                        true
+                    ]
                 ]
             },
             "output_par_importer": {
@@ -2857,10 +3106,18 @@
                 ],
                 "cancel_on_error": true,
                 "mapping_selection": [
-                    true
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "datasets/output_parameters.xlsx"
+                        },
+                        true
+                    ]
                 ]
             }
         },
-        "Exporters": {}
+        "Exporters": {},
+        "Manipulators": {}
     }
 }
