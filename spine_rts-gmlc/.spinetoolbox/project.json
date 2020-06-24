@@ -13,81 +13,21 @@
         "connections": [
             {
                 "from": [
-                    "output_DB",
-                    "bottom"
-                ],
-                "to": [
-                    "output_exporter",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_exporter",
-                    "right"
-                ],
-                "to": [
-                    "output_files",
-                    "left"
-                ]
-            },
-            {
-                "from": [
                     "output_par_importer",
                     "right"
                 ],
                 "to": [
-                    "output_DB",
-                    "left"
+                    "input_DB",
+                    "bottom"
                 ]
             },
             {
                 "from": [
-                    "data_importer_ts",
+                    "input_DB",
                     "right"
                 ],
                 "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
                     "Spine_RTS_GMLC",
-                    "bottom"
-                ],
-                "to": [
-                    "output_DB",
-                    "right"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_def",
-                    "right"
-                ],
-                "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_ts",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_ts",
                     "left"
                 ]
             },
@@ -103,11 +43,51 @@
             },
             {
                 "from": [
-                    "input_DB",
+                    "data_files_ts",
                     "right"
                 ],
                 "to": [
+                    "data_importer_ts",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
                     "left"
                 ]
             },
@@ -117,8 +97,28 @@
                     "right"
                 ],
                 "to": [
-                    "input_DB",
+                    "output_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_exporter",
+                    "right"
+                ],
+                "to": [
+                    "output_files",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_DB",
                     "bottom"
+                ],
+                "to": [
+                    "output_exporter",
+                    "left"
                 ]
             }
         ]
@@ -28861,7 +28861,7 @@
                         ],
                         "merging_settings": {},
                         "merging_domains": [],
-                        "latest_database_commit": "2020-06-12T14:31:33.428806",
+                        "latest_database_commit": "2020-06-17T12:30:18.409849",
                         "database_url": {
                             "type": "file_url",
                             "relative": true,
