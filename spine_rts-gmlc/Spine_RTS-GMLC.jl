@@ -52,8 +52,10 @@ using SpineOpt
 input_url = "sqlite:///$(@__DIR__)/.spinetoolbox/items/input_db/input_DB.sqlite"
 output_url = "sqlite:///$(@__DIR__)/.spinetoolbox/items/output_db/output_DB.sqlite"
 
-m = run_spineopt(input_url, output_url; cleanup=true)
+m = run_spineopt(input_url, input_url; cleanup=true)
 # optional keywords: with_optimizer=optimizer_with_attributes(Cbc.Optimizer), add_constraints=m->constraint_ramping(m)
+# execute with full address: include("C:\\HJY_projects\\spine\\RTS-GMLC_system_test\\spinetoolbox_rts-gmlc\\spine_rts-gmlc\\Spine_RTS-GMLC.jl")
+# execute with relative address: include("..\\spine\\RTS-GMLC_system_test\\spinetoolbox_rts-gmlc\\spine_rts-gmlc\\Spine_RTS-GMLC.jl")
 
 # Show active variables and constraints
 println("*** Active constraints: ***")
@@ -70,3 +72,13 @@ end
 # for key in keys(m.ext[:variables][var])
 #     !isempty(m.ext[:variables][var][key]) && println(m.ext[:variables][var][key], " = ", SpineModel.value(m.ext[:variables][var][key]))
 # end
+
+# access defined object and parameters
+# demand(node = node_group__node()[1][:node1], t = time_slice()[1])
+# demand(node=node()[first(findall(n->n.name == :node_name_here, node()))])
+
+# key = m.ext[:constraints][:constraint_name].keys[3]
+# m.ext[:constraints][:constraint_name][key]
+
+# node_group__node()[1][:node1]
+# fractional_demand[(node1=node_group__node()[1][:node1], node2=node_group__node()[1][:node2],t = time_slice()[1])]

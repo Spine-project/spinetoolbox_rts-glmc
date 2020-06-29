@@ -13,91 +13,11 @@
         "connections": [
             {
                 "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "bottom"
-                ]
-            },
-            {
-                "from": [
-                    "input_DB",
-                    "right"
-                ],
-                "to": [
-                    "Spine_RTS_GMLC",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files",
-                    "right"
-                ],
-                "to": [
-                    "data_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_ts",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_ts",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_def",
-                    "right"
-                ],
-                "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Spine_RTS_GMLC",
+                    "output_DB",
                     "bottom"
                 ],
                 "to": [
-                    "output_DB",
-                    "right"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_ts",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
-                    "output_DB",
+                    "output_exporter",
                     "left"
                 ]
             },
@@ -113,12 +33,92 @@
             },
             {
                 "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
                     "output_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Spine_RTS_GMLC",
                     "bottom"
                 ],
                 "to": [
-                    "output_exporter",
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
                     "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_ts",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_ts",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files",
+                    "right"
+                ],
+                "to": [
+                    "data_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "input_DB",
+                    "right"
+                ],
+                "to": [
+                    "Spine_RTS_GMLC",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "bottom"
                 ]
             }
         ]
@@ -129,7 +129,7 @@
                 "type": "Data Store",
                 "short name": "input_db",
                 "description": "",
-                "x": 22.430840304071012,
+                "x": 25.785400124125026,
                 "y": -73.62623105380311,
                 "url": {
                     "dialect": "sqlite",
@@ -148,8 +148,8 @@
                 "type": "Data Store",
                 "short name": "output_db",
                 "description": "",
-                "x": 94.88826533789674,
-                "y": 105.68269859897285,
+                "x": 101.59738497800478,
+                "y": 98.97357895886482,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -197,7 +197,7 @@
                     "database": {
                         "type": "path",
                         "relative": false,
-                        "path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp/array_input_unit_constraints.sqlite"
+                        "path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp/test_input_unit_constraints_1.sqlite"
                     }
                 }
             }
@@ -267,11 +267,6 @@
                 "x": 376.52936051451707,
                 "y": 181.13234625185274,
                 "references": [
-                    {
-                        "type": "path",
-                        "relative": false,
-                        "path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp/outputs-bus_detailed+ptdf.xlsx"
-                    },
                     {
                         "type": "path",
                         "relative": false,
@@ -2262,7 +2257,8 @@
                                     "52": "string",
                                     "53": "string",
                                     "54": "string",
-                                    "55": "string"
+                                    "55": "string",
+                                    "56": "string"
                                 },
                                 "obj_unit": {
                                     "0": "string",
@@ -2321,7 +2317,7 @@
                         }
                     ]
                 ],
-                "cancel_on_error": true,
+                "cancel_on_error": false,
                 "mapping_selection": [
                     [
                         {
@@ -2982,7 +2978,7 @@
                         }
                     ]
                 ],
-                "cancel_on_error": true,
+                "cancel_on_error": false,
                 "mapping_selection": [
                     [
                         {
@@ -3129,7 +3125,7 @@
                         }
                     ]
                 ],
-                "cancel_on_error": true,
+                "cancel_on_error": false,
                 "mapping_selection": [
                     [
                         {
