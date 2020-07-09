@@ -13,81 +13,21 @@
         "connections": [
             {
                 "from": [
-                    "output_DB",
-                    "bottom"
-                ],
-                "to": [
-                    "output_exporter",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_exporter",
-                    "right"
-                ],
-                "to": [
-                    "output_files",
-                    "left"
-                ]
-            },
-            {
-                "from": [
                     "output_par_importer",
                     "right"
                 ],
                 "to": [
-                    "output_DB",
-                    "left"
+                    "input_DB",
+                    "bottom"
                 ]
             },
             {
                 "from": [
-                    "data_importer_ts",
+                    "input_DB",
                     "right"
                 ],
                 "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
                     "Spine_RTS_GMLC",
-                    "bottom"
-                ],
-                "to": [
-                    "output_DB",
-                    "right"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_def",
-                    "right"
-                ],
-                "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_ts",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_ts",
                     "left"
                 ]
             },
@@ -103,11 +43,51 @@
             },
             {
                 "from": [
-                    "input_DB",
+                    "data_files_ts",
                     "right"
                 ],
                 "to": [
+                    "data_importer_ts",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
                     "left"
                 ]
             },
@@ -117,8 +97,28 @@
                     "right"
                 ],
                 "to": [
-                    "input_DB",
+                    "output_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_exporter",
+                    "right"
+                ],
+                "to": [
+                    "output_files",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_DB",
                     "bottom"
+                ],
+                "to": [
+                    "output_exporter",
+                    "left"
                 ]
             }
         ]
@@ -129,8 +129,8 @@
                 "type": "Data Store",
                 "short name": "input_db",
                 "description": "",
-                "x": 25.785400124125026,
-                "y": -73.62623105380311,
+                "x": 22.535400124125026,
+                "y": -77.62623105380308,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -148,8 +148,8 @@
                 "type": "Data Store",
                 "short name": "output_db",
                 "description": "",
-                "x": 101.59738497800478,
-                "y": 98.97357895886482,
+                "x": 98.34738497800478,
+                "y": 94.97357895886485,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -167,8 +167,8 @@
                 "type": "Data Store",
                 "short name": "toolbox_input",
                 "description": "",
-                "x": 345.7164682668979,
-                "y": -44.240615543932876,
+                "x": 342.4664682668979,
+                "y": -48.24061554393285,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -186,8 +186,8 @@
                 "type": "Data Store",
                 "short name": "ds_test",
                 "description": "",
-                "x": 345.0186899686803,
-                "y": -166.75728884976212,
+                "x": 341.7686899686803,
+                "y": -170.7572888497621,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -207,8 +207,8 @@
                 "type": "Data Connection",
                 "short name": "data_files",
                 "description": "",
-                "x": -354.2157763024072,
-                "y": -146.39379497081796,
+                "x": -357.4657763024072,
+                "y": -150.39379497081794,
                 "references": [
                     {
                         "type": "path",
@@ -236,8 +236,8 @@
                 "type": "Data Connection",
                 "short name": "data_files_ts",
                 "description": "",
-                "x": -359.4525654844284,
-                "y": -15.68990181849442,
+                "x": -362.7025654844284,
+                "y": -19.68990181849439,
                 "references": [
                     {
                         "type": "path",
@@ -250,8 +250,8 @@
                 "type": "Data Connection",
                 "short name": "output_par_def",
                 "description": "",
-                "x": -357.52936051451707,
-                "y": 112.46142345753347,
+                "x": -360.77936051451707,
+                "y": 108.4614234575335,
                 "references": [
                     {
                         "type": "path",
@@ -264,8 +264,8 @@
                 "type": "Data Connection",
                 "short name": "output_files",
                 "description": "",
-                "x": 376.52936051451707,
-                "y": 181.13234625185274,
+                "x": 373.27936051451707,
+                "y": 177.13234625185277,
                 "references": [
                     {
                         "type": "path",
@@ -280,8 +280,8 @@
                 "type": "Tool",
                 "short name": "spine_rts_gmlc",
                 "description": "",
-                "x": 183.61375796964856,
-                "y": -74.98872791356689,
+                "x": 180.36375796964856,
+                "y": -78.98872791356686,
                 "tool": "SpineModel",
                 "execute_in_work": false,
                 "cmd_line_args": []
@@ -293,8 +293,8 @@
                 "type": "Importer",
                 "short name": "data_importer",
                 "description": "Convert data files into Spine DB",
-                "x": -151.13053844786492,
-                "y": -148.8181118671224,
+                "x": -154.38053844786492,
+                "y": -152.81811186712238,
                 "mappings": [
                     [
                         {
@@ -492,7 +492,8 @@
                                     "1": "string",
                                     "2": "string",
                                     "3": "string",
-                                    "4": "string"
+                                    "4": "string",
+                                    "5": "string"
                                 },
                                 "rel_stor-eff": {
                                     "0": "string",
@@ -515,7 +516,7 @@
                                     "1": "string",
                                     "2": "float",
                                     "3": "float",
-                                    "4": "string",
+                                    "4": "boolean",
                                     "5": "float"
                                 }
                             },
@@ -1770,7 +1771,7 @@
                                 "obj_connection_ptdf": {
                                     "0": "string",
                                     "1": "string",
-                                    "2": "string",
+                                    "2": "boolean",
                                     "3": "float",
                                     "4": "float"
                                 },
@@ -1840,17 +1841,13 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_commodity_ptdf",
-                                "obj_connection_ptdf",
-                                "obj_node_ptdf",
-                                "obj_node-group_ptdf",
-                                "rel_for_node_group_ptdf",
+                                "obj_connection",
                                 "rel_connection__direction_node",
-                                "rel_connection__node__node_ptdf",
+                                "rel_connection__node__node",
                                 "rel_node__commodity",
                                 "rel__sto_struc__sto_scen",
                                 "rel_node__stochastic_structure",
-                                "rel_node__temporal_block_ptdf"
+                                "rel_node__temporal_block"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -2317,7 +2314,7 @@
                         }
                     ]
                 ],
-                "cancel_on_error": false,
+                "cancel_on_error": true,
                 "mapping_selection": [
                     [
                         {
@@ -2357,8 +2354,8 @@
                 "type": "Importer",
                 "short name": "data_importer_ts",
                 "description": "",
-                "x": -153.24729203964256,
-                "y": -17.07374183986414,
+                "x": -156.49729203964256,
+                "y": -21.073741839864113,
                 "mappings": [
                     [
                         {
@@ -2968,7 +2965,7 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_node_bus-demand_ptdf",
+                                "obj_node_bus-demand",
                                 "obj_node_res-gen",
                                 "obj_tmp_1",
                                 "obj_tmp_2",
@@ -2978,7 +2975,7 @@
                         }
                     ]
                 ],
-                "cancel_on_error": false,
+                "cancel_on_error": true,
                 "mapping_selection": [
                     [
                         {
@@ -2994,8 +2991,8 @@
                 "type": "Importer",
                 "short name": "output_par_importer",
                 "description": "",
-                "x": -148.43791192430552,
-                "y": 110.34868812502839,
+                "x": -151.68791192430552,
+                "y": 106.34868812502842,
                 "mappings": [
                     [
                         {
@@ -3125,7 +3122,7 @@
                         }
                     ]
                 ],
-                "cancel_on_error": false,
+                "cancel_on_error": true,
                 "mapping_selection": [
                     [
                         {
@@ -3143,8 +3140,8 @@
                 "type": "Exporter",
                 "short name": "output_exporter",
                 "description": "",
-                "x": 216.84255890661967,
-                "y": 194.2572888497621,
+                "x": 213.59255890661967,
+                "y": 190.25728884976212,
                 "settings_packs": [
                     {
                         "output_file_name": "export_from_outputDB.xlsx",
@@ -3299,6 +3296,15 @@
                                     ],
                                     [
                                         "units_started_up"
+                                    ],
+                                    [
+                                        "total_costs"
+                                    ],
+                                    [
+                                        "fuel_costs"
+                                    ],
+                                    [
+                                        "objective_penalties"
                                     ]
                                 ],
                                 "report": [
@@ -4676,6 +4682,18 @@
                                     [
                                         "result_temp",
                                         "node_slack_neg"
+                                    ],
+                                    [
+                                        "result_temp",
+                                        "total_costs"
+                                    ],
+                                    [
+                                        "result_temp",
+                                        "fuel_costs"
+                                    ],
+                                    [
+                                        "result_temp",
+                                        "objective_penalties"
                                     ]
                                 ],
                                 "report__unit__node__direction__stochastic_scenario": [
@@ -28857,7 +28875,7 @@
                         ],
                         "merging_settings": {},
                         "merging_domains": [],
-                        "latest_database_commit": "2020-06-17T12:30:18.409849",
+                        "latest_database_commit": "2020-07-01T11:37:42.917260",
                         "database_url": {
                             "type": "file_url",
                             "relative": true,
