@@ -13,71 +13,41 @@
         "connections": [
             {
                 "from": [
+                    "test_importer",
+                    "right"
+                ],
+                "to": [
+                    "ds_test",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "test_file",
+                    "right"
+                ],
+                "to": [
+                    "test_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "output_par_importer",
                     "right"
                 ],
                 "to": [
-                    "output_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_exporter",
-                    "right"
-                ],
-                "to": [
-                    "output_files",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_ts",
-                    "right"
-                ],
-                "to": [
                     "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Spine_RTS_GMLC",
                     "bottom"
-                ],
-                "to": [
-                    "output_DB",
-                    "right"
                 ]
             },
             {
                 "from": [
-                    "output_par_def",
+                    "input_DB",
                     "right"
                 ],
                 "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_ts",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_ts",
+                    "Spine_RTS_GMLC",
                     "left"
                 ]
             },
@@ -93,11 +63,61 @@
             },
             {
                 "from": [
-                    "input_DB",
+                    "data_files_ts",
                     "right"
                 ],
                 "to": [
+                    "data_importer_ts",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_exporter",
+                    "right"
+                ],
+                "to": [
+                    "output_files",
                     "left"
                 ]
             },
@@ -107,27 +127,7 @@
                     "right"
                 ],
                 "to": [
-                    "input_DB",
-                    "bottom"
-                ]
-            },
-            {
-                "from": [
-                    "test_file",
-                    "right"
-                ],
-                "to": [
-                    "test_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "test_importer",
-                    "right"
-                ],
-                "to": [
-                    "ds_test",
+                    "output_DB",
                     "left"
                 ]
             }
@@ -2532,7 +2532,14 @@
                                                 "reference": 6
                                             }
                                         },
-                                        "skip_columns": [],
+                                        "skip_columns": [
+                                            0,
+                                            1,
+                                            2,
+                                            3,
+                                            4,
+                                            5
+                                        ],
                                         "read_start_row": 0,
                                         "objects": [
                                             {
@@ -2556,6 +2563,39 @@
                                             {
                                                 "map_type": "column_header",
                                                 "reference": 4
+                                            },
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 5
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    },
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 1
+                                        },
+                                        "parameters": {
+                                            "map_type": "None"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 5
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 2
                                             },
                                             {
                                                 "map_type": "column_header",
@@ -2731,8 +2771,7 @@
                                     "2": "string",
                                     "3": "float",
                                     "4": "float",
-                                    "5": "float",
-                                    "6": "float"
+                                    "5": "float"
                                 },
                                 "rel_u__d_n-bus_detailed": {
                                     "0": "string",
