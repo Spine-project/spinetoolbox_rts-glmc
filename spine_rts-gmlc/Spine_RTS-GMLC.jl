@@ -75,7 +75,7 @@ end
 
 # access defined object and parameters
 ## demand(node = node_group__node()[1][:node1], t = time_slice()[1])
-## demand(node=node()[first(findall(n->n.name == :node_name_here, node()))])
+## demand(node=node()[first(findall(n->n.name == :node_name_here/Symbol("node_name_here"), node()))])
 
 ## key = m.ext[:constraints][:constraint_name].keys[3]
 ## m.ext[:constraints][:constraint_name][key]
