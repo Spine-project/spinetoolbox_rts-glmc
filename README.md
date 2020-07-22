@@ -5,7 +5,7 @@ This case can be used to test and verify the functionality of SpineOpt modelling
 
 ## Results comparison
 ### Power Generation Category for a July 10–15 Day-Ahead Simulation
-![image](https://user-images.githubusercontent.com/43530784/80970132-5b996300-8e23-11ea-9632-4ebb2c083c53.png)
+![image](https://user-images.githubusercontent.com/43530784/88154590-badf6600-cc0f-11ea-8439-3922ff14e086.png) \
 Source: [C. Barrows et al. (2020)](https://ieeexplore.ieee.org/document/8753693/metrics#metrics)
 
 ## System components modelling schema
