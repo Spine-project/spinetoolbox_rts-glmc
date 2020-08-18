@@ -23,16 +23,6 @@
             },
             {
                 "from": [
-                    "output_exporter",
-                    "right"
-                ],
-                "to": [
-                    "output_files",
-                    "left"
-                ]
-            },
-            {
-                "from": [
                     "data_importer_ts",
                     "right"
                 ],
@@ -139,8 +129,8 @@
                 "type": "Data Store",
                 "short name": "input_db",
                 "description": "",
-                "x": 17.329242860696922,
-                "y": -10.29664248024433,
+                "x": 16.410497376129946,
+                "y": 29.682544731302976,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -159,7 +149,7 @@
                 "short name": "output_db",
                 "description": "",
                 "x": 94.21590706579033,
-                "y": 162.30316753242357,
+                "y": 203.20110022853785,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -178,7 +168,7 @@
                 "short name": "toolbox_input",
                 "description": "",
                 "x": 336.1856316522561,
-                "y": 16.93961432719857,
+                "y": 57.83754702331285,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -197,7 +187,7 @@
                 "short name": "ds_test",
                 "description": "",
                 "x": 297.3179978987114,
-                "y": -219.02635158196398,
+                "y": -178.1284188858497,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -216,7 +206,7 @@
                 "short name": "sample_db_ptdf+unit_constraints",
                 "description": "",
                 "x": 307.56019712915884,
-                "y": -117.69038765392523,
+                "y": -76.79245495781095,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -237,7 +227,7 @@
                 "short name": "data_files",
                 "description": "",
                 "x": -363.746612917049,
-                "y": -84.13888574847284,
+                "y": -43.24095305235856,
                 "references": [
                     {
                         "type": "path",
@@ -266,7 +256,7 @@
                 "short name": "data_files_ts",
                 "description": "",
                 "x": -368.9834020990702,
-                "y": 45.490328052637025,
+                "y": 86.3882607487513,
                 "references": [
                     {
                         "type": "path",
@@ -280,7 +270,7 @@
                 "short name": "output_par_def",
                 "description": "",
                 "x": -367.06019712915884,
-                "y": 173.64165332866492,
+                "y": 214.5395860247792,
                 "references": [
                     {
                         "type": "path",
@@ -289,26 +279,12 @@
                     }
                 ]
             },
-            "output_files": {
-                "type": "Data Connection",
-                "short name": "output_files",
-                "description": "",
-                "x": 366.9985238998753,
-                "y": 242.31257612298418,
-                "references": [
-                    {
-                        "type": "path",
-                        "relative": false,
-                        "path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp/export_from_outputDB.xlsx"
-                    }
-                ]
-            },
             "test_file": {
                 "type": "Data Connection",
                 "short name": "test_file",
                 "description": "",
                 "x": -184.40682873950158,
-                "y": -235.93751872089348,
+                "y": -195.0395860247792,
                 "references": [
                     {
                         "type": "path",
@@ -324,7 +300,7 @@
                 "short name": "spine_rts_gmlc",
                 "description": "",
                 "x": 174.0829213550068,
-                "y": -13.808498042435446,
+                "y": 27.089434653678836,
                 "tool": "SpineModel",
                 "execute_in_work": false,
                 "cmd_line_args": []
@@ -336,8 +312,8 @@
                 "type": "Importer",
                 "short name": "data_importer",
                 "description": "Convert data files into Spine DB",
-                "x": -160.6613750625067,
-                "y": -89.7872406984183,
+                "x": -159.7426295779397,
+                "y": -48.88930800230402,
                 "mappings": [
                     [
                         {
@@ -358,6 +334,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
                                         }
@@ -384,6 +361,7 @@
                                                 "reference": 5
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -411,8 +389,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel_stor_eff-bus_detailed": [
@@ -436,6 +413,7 @@
                                                 "reference": 5
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -463,8 +441,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "obj_node_for-storage": [
@@ -487,6 +464,7 @@
                                                 "map_type": "None"
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
@@ -560,7 +538,8 @@
                                     "2": "float",
                                     "3": "float",
                                     "4": "boolean",
-                                    "5": "float"
+                                    "5": "float",
+                                    "6": "float"
                                 }
                             },
                             "table_row_types": {}
@@ -577,14 +556,15 @@
                                 "branch": [
                                     {
                                         "map_type": "ObjectClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
                                         "name": {
                                             "map_type": "None"
                                         },
                                         "parameters": {
                                             "map_type": "None"
                                         },
-                                        "skip_columns": [],
-                                        "read_start_row": 0,
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
                                         }
@@ -593,14 +573,15 @@
                                 "bus": [
                                     {
                                         "map_type": "ObjectClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
                                         "name": {
                                             "map_type": "None"
                                         },
                                         "parameters": {
                                             "map_type": "None"
                                         },
-                                        "skip_columns": [],
-                                        "read_start_row": 0,
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
                                         }
@@ -609,6 +590,8 @@
                                 "obj_connection": [
                                     {
                                         "map_type": "ObjectClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
                                         "name": {
                                             "map_type": "column",
                                             "reference": 0
@@ -616,8 +599,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
-                                        "skip_columns": [],
-                                        "read_start_row": 0,
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
@@ -627,6 +609,8 @@
                                 "rel_connection__node__node": [
                                     {
                                         "map_type": "RelationshipClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
                                         "name": {
                                             "map_type": "column",
                                             "reference": 0
@@ -643,8 +627,7 @@
                                                 "reference": 5
                                             }
                                         },
-                                        "skip_columns": [],
-                                        "read_start_row": 0,
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -672,13 +655,14 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel_connection__direction_node": [
                                     {
                                         "map_type": "RelationshipClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
                                         "name": {
                                             "map_type": "column",
                                             "reference": 0
@@ -695,8 +679,7 @@
                                                 "reference": 4
                                             }
                                         },
-                                        "skip_columns": [],
-                                        "read_start_row": 0,
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -716,13 +699,14 @@
                                                 "map_type": "column_header",
                                                 "reference": 2
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel__sto_struc__sto_scen": [
                                     {
                                         "map_type": "RelationshipClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
                                         "name": {
                                             "map_type": "column",
                                             "reference": 0
@@ -739,8 +723,7 @@
                                                 "reference": 4
                                             }
                                         },
-                                        "skip_columns": [],
-                                        "read_start_row": 0,
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -760,13 +743,14 @@
                                                 "map_type": "column_header",
                                                 "reference": 2
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel_for_node_basic_structure": [
                                     {
                                         "map_type": "RelationshipClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
                                         "name": {
                                             "map_type": "column",
                                             "reference": 0
@@ -774,8 +758,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
-                                        "skip_columns": [],
-                                        "read_start_row": 0,
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -795,11 +778,12 @@
                                                 "map_type": "column_header",
                                                 "reference": 4
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
                                         "name": {
                                             "map_type": "column",
                                             "reference": 1
@@ -807,8 +791,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
-                                        "skip_columns": [],
-                                        "read_start_row": 0,
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -828,11 +811,12 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
                                         "name": {
                                             "map_type": "column",
                                             "reference": 2
@@ -840,8 +824,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
-                                        "skip_columns": [],
-                                        "read_start_row": 0,
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -861,11 +844,12 @@
                                                 "map_type": "column_header",
                                                 "reference": 6
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
                                         "name": {
                                             "map_type": "column",
                                             "reference": 2
@@ -873,8 +857,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
-                                        "skip_columns": [],
-                                        "read_start_row": 0,
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -894,8 +877,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 7
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ]
                             },
@@ -1053,6 +1035,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
                                         }
@@ -1069,6 +1052,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
                                         }
@@ -1086,6 +1070,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
@@ -1113,6 +1098,7 @@
                                                 "reference": 5
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -1140,8 +1126,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel_connection__direction_node": [
@@ -1165,6 +1150,7 @@
                                                 "reference": 4
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -1184,8 +1170,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 2
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "dc_branch": [
@@ -1199,6 +1184,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
                                         }
@@ -1225,6 +1211,7 @@
                                                 "reference": 3
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
@@ -1251,6 +1238,7 @@
                                                 "map_type": "None"
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
@@ -1281,6 +1269,7 @@
                                                 "map_type": "None"
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 0
@@ -1297,6 +1286,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "groups": {
                                             "map_type": "column_header",
                                             "reference": 6
@@ -1304,8 +1294,7 @@
                                         "members": {
                                             "map_type": "column",
                                             "reference": 6
-                                        },
-                                        "import_objects": true
+                                        }
                                     }
                                 ],
                                 "rel_connection__node__node_ptdf": [
@@ -1329,6 +1318,7 @@
                                                 "reference": 5
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -1356,8 +1346,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel__sto_struc__sto_scen": [
@@ -1381,6 +1370,7 @@
                                                 "reference": 4
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -1400,8 +1390,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 2
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel_for_node_basic_structure": [
@@ -1416,6 +1405,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -1435,8 +1425,7 @@
                                                 "map_type": "column_header",
                                                 "reference": "4"
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1449,6 +1438,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -1468,8 +1458,7 @@
                                                 "map_type": "column_header",
                                                 "reference": "5"
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1482,6 +1471,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -1501,8 +1491,7 @@
                                                 "map_type": "column_header",
                                                 "reference": "6"
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1515,6 +1504,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -1534,8 +1524,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 7
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel_for_node_basic_struc_ptdf": [
@@ -1550,6 +1539,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -1569,8 +1559,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 4
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1583,6 +1572,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -1602,8 +1592,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1616,6 +1605,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -1635,8 +1625,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 6
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1649,6 +1638,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -1668,8 +1658,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 7
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ]
                             },
@@ -1763,7 +1752,7 @@
                                     "row": 1,
                                     "column": 0,
                                     "read_until_col": true,
-                                    "read_until_row": true
+                                    "read_until_row": false
                                 }
                             },
                             "table_types": {
@@ -1973,6 +1962,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
                                         }
@@ -1989,6 +1979,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
                                         }
@@ -2014,6 +2005,7 @@
                                                 "map_type": "None"
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2033,8 +2025,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 2
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel_u__d_n-bus_detailed": [
@@ -2058,6 +2049,7 @@
                                                 "reference": 2
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2077,8 +2069,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 2
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel_for_units_on_resolution": [
@@ -2093,6 +2084,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2112,8 +2104,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2126,6 +2117,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2145,8 +2137,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 4
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2159,6 +2150,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2178,8 +2170,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel_for_array_heatrates": [
@@ -2215,6 +2206,7 @@
                                                 "reference": 9
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2234,8 +2226,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 6
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2269,6 +2260,7 @@
                                                 "reference": 10
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2296,8 +2288,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2341,6 +2332,7 @@
                                                 }
                                             ]
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2360,8 +2352,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 7
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2405,6 +2396,7 @@
                                                 }
                                             ]
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2432,8 +2424,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2455,6 +2446,7 @@
                                                 "reference": 21
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2474,8 +2466,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "obj_unit_w_parameters": [
@@ -2498,6 +2489,7 @@
                                                 "map_type": "None"
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
@@ -2532,6 +2524,7 @@
                                                 "reference": 6
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2559,8 +2552,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2573,6 +2565,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2592,8 +2585,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2606,6 +2598,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2625,8 +2618,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel_for_array_hr-bus_detailed": [
@@ -2650,6 +2642,7 @@
                                                 "reference": 9
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2669,8 +2662,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 6
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2692,6 +2684,7 @@
                                                 "reference": 10
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2719,8 +2712,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2764,6 +2756,7 @@
                                                 }
                                             ]
                                         },
+                                        "import_objects": false,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2783,8 +2776,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 7
                                             }
-                                        ],
-                                        "import_objects": false
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2828,6 +2820,7 @@
                                                 }
                                             ]
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2855,8 +2848,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2878,6 +2870,7 @@
                                                 "reference": 21
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2897,8 +2890,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     }
                                 ],
                                 "rel_for_res-bus_detailed": [
@@ -2922,6 +2914,7 @@
                                                 "reference": 6
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2949,8 +2942,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2963,6 +2955,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -2982,8 +2975,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "import_objects": true
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2996,6 +2988,7 @@
                                         "parameters": {
                                             "map_type": "None"
                                         },
+                                        "import_objects": true,
                                         "objects": [
                                             {
                                                 "map_type": "column",
@@ -3015,8 +3008,119 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
+                                        ]
+                                    }
+                                ],
+                                "rel_for_emissions": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "column_header",
+                                                "reference": 5
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "column",
+                                                "reference": 5
+                                            }
+                                        },
+                                        "import_objects": true,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 4
+                                            }
                                         ],
-                                        "import_objects": true
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 3
+                                            },
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 4
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 1
+                                        },
+                                        "parameters": {
+                                            "map_type": "None"
+                                        },
+                                        "import_objects": true,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "map_type": "column_header",
+                                                "reference": 3
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "obj_node_w_parameters": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "row",
+                                                "reference": -1
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "None"
+                                            }
+                                        },
+                                        "import_objects": true,
+                                        "objects": {
+                                            "map_type": "column",
+                                            "reference": 1
+                                        }
                                     }
                                 ]
                             },
@@ -3083,6 +3187,18 @@
                                     "column": 0,
                                     "read_until_col": true,
                                     "read_until_row": false
+                                },
+                                "rel_for_emissions": {
+                                    "header": true,
+                                    "read_until_col": true,
+                                    "read_until_row": true,
+                                    "row": 1
+                                },
+                                "obj_node_w_parameters": {
+                                    "row": 1,
+                                    "header": true,
+                                    "read_until_col": true,
+                                    "read_until_row": true
                                 }
                             },
                             "table_types": {
@@ -3244,15 +3360,31 @@
                                     "4": "string",
                                     "5": "string",
                                     "6": "float"
+                                },
+                                "rel_for_emissions": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string",
+                                    "5": "float"
+                                },
+                                "obj_node_w_parameters": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "float",
+                                    "3": "float"
                                 }
                             },
                             "table_row_types": {},
                             "selected_tables": [
                                 "obj_unit_w_parameters",
+                                "obj_node_w_parameters",
                                 "rel_for_units_on_resolution",
                                 "rel_u__d_n-bus_detailed",
                                 "rel_for_array_hr-bus_detailed",
-                                "rel_for_res-bus_detailed"
+                                "rel_for_res-bus_detailed",
+                                "rel_for_emissions"
                             ],
                             "source_type": "ExcelConnector"
                         }
@@ -3299,7 +3431,7 @@
                 "short name": "data_importer_ts",
                 "description": "",
                 "x": -162.77812865428433,
-                "y": 45.18116738248097,
+                "y": 86.07910007859525,
                 "mappings": [
                     [
                         {
@@ -3340,10 +3472,12 @@
                                                 "fixed_resolution": false
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "row",
                                             "reference": 0
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "obj_node_bus-demand": [
@@ -3377,10 +3511,12 @@
                                                 "fixed_resolution": false
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "row",
                                             "reference": 0
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "obj_node_res-gen": [
@@ -3414,10 +3550,12 @@
                                                 "fixed_resolution": false
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "row",
                                             "reference": 0
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "obj_tmp_1": [
@@ -3441,10 +3579,12 @@
                                                 "reference": 3
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "obj_tmp_2": [
@@ -3468,10 +3608,12 @@
                                                 "reference": 3
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "ts_renewable": [
@@ -3502,9 +3644,11 @@
                                                 "fixed_resolution": false
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "obj_tmp_3": [
@@ -3528,10 +3672,12 @@
                                                 "reference": 3
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "obj_node_bus-demand_ptdf": [
@@ -3565,10 +3711,12 @@
                                                 "fixed_resolution": false
                                             }
                                         },
+                                        "import_objects": true,
                                         "objects": {
                                             "map_type": "row",
                                             "reference": 0
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ]
                             },
@@ -3635,9 +3783,7 @@
                                     "0": "string",
                                     "1": "float",
                                     "2": "float",
-                                    "3": "float",
-                                    "4": "float",
-                                    "5": "string"
+                                    "3": "float"
                                 },
                                 "obj_node_bus-demand": {
                                     "0": "string",
@@ -3713,9 +3859,7 @@
                                     "70": "float",
                                     "71": "float",
                                     "72": "float",
-                                    "73": "float",
-                                    "74": "float",
-                                    "75": "string"
+                                    "73": "float"
                                 },
                                 "obj_node_res-gen": {
                                     "0": "string",
@@ -3905,9 +4049,7 @@
                                 },
                                 "obj_node_bus-demand_ptdf": {
                                     "0": "string",
-                                    "1": "float",
-                                    "2": "float",
-                                    "3": "string"
+                                    "1": "float"
                                 }
                             },
                             "table_row_types": {},
@@ -3939,7 +4081,7 @@
                 "short name": "output_par_importer",
                 "description": "",
                 "x": -156.89406918773363,
-                "y": 172.6035973473735,
+                "y": 213.50153004348778,
                 "mappings": [
                     [
                         {
@@ -4086,7 +4228,7 @@
                 "short name": "test_importer",
                 "description": "",
                 "x": 46.732851517756984,
-                "y": -223.22863915768346,
+                "y": -182.33070646156918,
                 "mappings": [
                     [
                         {
@@ -4397,17 +4539,7 @@
                 ]
             }
         },
-        "Exporters": {
-            "output_exporter": {
-                "type": "Exporter",
-                "short name": "output_exporter",
-                "description": "",
-                "x": 207.3117222919779,
-                "y": 255.43751872089354,
-                "settings_packs": [],
-                "cancel_on_error": true
-            }
-        },
+        "Exporters": {},
         "Manipulators": {}
     }
 }
