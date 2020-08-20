@@ -1,3 +1,5 @@
-git+https://github.com/Spine-project/Spine-Toolbox#egg=spinetoolbox@dev
-git+https://github.com/Spine-project/Spine-Model@dev
-git+https://github.com/Spine-project/SpineInterface.jl@master
+spinedb_api @ https://github.com/Spine-project/Spine-Database-API@master
+spine-engine @ https://github.com/Spine-project/spine-engine@master
+spinetoolbox @ https://github.com/Spine-project/Spine-Toolbox@dev
+SpineOpt @ https://github.com/Spine-project/SpineOpt.jl@master
+SpineInterface @ https://github.com/Spine-project/SpineInterface.jl@master
