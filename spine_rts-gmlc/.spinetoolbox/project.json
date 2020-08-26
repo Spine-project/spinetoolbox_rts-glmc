@@ -13,61 +13,41 @@
         "connections": [
             {
                 "from": [
+                    "test_importer",
+                    "right"
+                ],
+                "to": [
+                    "ds_test",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "test_file",
+                    "right"
+                ],
+                "to": [
+                    "test_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "output_par_importer",
                     "right"
                 ],
                 "to": [
-                    "output_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_ts",
-                    "right"
-                ],
-                "to": [
                     "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Spine_RTS_GMLC",
                     "bottom"
-                ],
-                "to": [
-                    "output_DB",
-                    "right"
                 ]
             },
             {
                 "from": [
-                    "output_par_def",
+                    "input_DB",
                     "right"
                 ],
                 "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_ts",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_ts",
+                    "Spine_RTS_GMLC",
                     "left"
                 ]
             },
@@ -83,11 +63,51 @@
             },
             {
                 "from": [
-                    "input_DB",
+                    "data_files_ts",
                     "right"
                 ],
                 "to": [
+                    "data_importer_ts",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
                     "left"
                 ]
             },
@@ -97,27 +117,7 @@
                     "right"
                 ],
                 "to": [
-                    "input_DB",
-                    "bottom"
-                ]
-            },
-            {
-                "from": [
-                    "test_file",
-                    "right"
-                ],
-                "to": [
-                    "test_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "test_importer",
-                    "right"
-                ],
-                "to": [
-                    "ds_test",
+                    "output_DB",
                     "left"
                 ]
             }
@@ -299,7 +299,7 @@
                 "type": "Tool",
                 "short name": "spine_rts_gmlc",
                 "description": "",
-                "x": 174.0829213550068,
+                "x": 175.00166683957377,
                 "y": 27.089434653678836,
                 "tool": "SpineModel",
                 "execute_in_work": false,
@@ -337,8 +337,7 @@
                                         "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "rel_stor-eff": [
@@ -390,8 +389,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     }
                                 ],
                                 "rel_stor_eff-bus_detailed": [
@@ -443,8 +441,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     }
                                 ],
                                 "obj_node_for-storage": [
@@ -471,8 +468,7 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ]
                             },
@@ -508,7 +504,7 @@
                             },
                             "selected_tables": [
                                 "obj_node_for-storage",
-                                "rel_stor-eff"
+                                "rel_stor_eff-bus_detailed"
                             ],
                             "source_type": "ExcelConnector",
                             "table_types": {
@@ -1042,7 +1038,8 @@
                                         "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "bus": [
@@ -1059,7 +1056,8 @@
                                         "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "obj_connection": [
@@ -1078,7 +1076,8 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "rel_connection__node__node": [
@@ -1130,7 +1129,8 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ]
+                                        ],
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "rel_connection__direction_node": [
@@ -1174,7 +1174,8 @@
                                                 "map_type": "column_header",
                                                 "reference": 2
                                             }
-                                        ]
+                                        ],
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "dc_branch": [
@@ -1191,7 +1192,8 @@
                                         "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "obj_commodity_ptdf": [
@@ -1219,7 +1221,8 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "obj_connection_ptdf": [
@@ -1246,7 +1249,8 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "obj_node-group_ptdf": [
@@ -1277,7 +1281,8 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 0
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 1"
                                     },
                                     {
                                         "map_type": "ObjectGroup",
@@ -1298,7 +1303,8 @@
                                         "members": {
                                             "map_type": "column",
                                             "reference": 6
-                                        }
+                                        },
+                                        "mapping_name": "Mapping 2"
                                     }
                                 ],
                                 "rel_connection__node__node_ptdf": [
@@ -1350,7 +1356,8 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ]
+                                        ],
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "rel__sto_struc__sto_scen": [
@@ -1394,7 +1401,8 @@
                                                 "map_type": "column_header",
                                                 "reference": 2
                                             }
-                                        ]
+                                        ],
+                                        "mapping_name": "Mapping 1"
                                     }
                                 ],
                                 "rel_for_node_basic_structure": [
@@ -1429,7 +1437,8 @@
                                                 "map_type": "column_header",
                                                 "reference": "4"
                                             }
-                                        ]
+                                        ],
+                                        "mapping_name": "Mapping 1"
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1462,7 +1471,8 @@
                                                 "map_type": "column_header",
                                                 "reference": "5"
                                             }
-                                        ]
+                                        ],
+                                        "mapping_name": "Mapping 2"
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1495,7 +1505,8 @@
                                                 "map_type": "column_header",
                                                 "reference": "6"
                                             }
-                                        ]
+                                        ],
+                                        "mapping_name": "Mapping 3"
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1528,7 +1539,8 @@
                                                 "map_type": "column_header",
                                                 "reference": 7
                                             }
-                                        ]
+                                        ],
+                                        "mapping_name": "Mapping 4"
                                     }
                                 ],
                                 "rel_for_node_basic_struc_ptdf": [
@@ -1563,7 +1575,8 @@
                                                 "map_type": "column_header",
                                                 "reference": 4
                                             }
-                                        ]
+                                        ],
+                                        "mapping_name": "Mapping 1"
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1596,7 +1609,8 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ]
+                                        ],
+                                        "mapping_name": "Mapping 2"
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1629,7 +1643,8 @@
                                                 "map_type": "column_header",
                                                 "reference": 6
                                             }
-                                        ]
+                                        ],
+                                        "mapping_name": "Mapping 3"
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1662,7 +1677,8 @@
                                                 "map_type": "column_header",
                                                 "reference": 7
                                             }
-                                        ]
+                                        ],
+                                        "mapping_name": "Mapping 4"
                                     }
                                 ]
                             },
@@ -3412,9 +3428,9 @@
                                 "obj_unit_w_parameters",
                                 "obj_node_w_parameters",
                                 "rel_for_units_on_resolution",
-                                "rel_unit__direction_node",
-                                "rel_for_array_heatrates",
-                                "rel_for_renewable_source",
+                                "rel_u__d_n-bus_detailed",
+                                "rel_for_array_hr-bus_detailed",
+                                "rel_for_res-bus_detailed",
                                 "rel_for_emissions"
                             ],
                             "source_type": "ExcelConnector"
@@ -3437,7 +3453,7 @@
                             "relative": true,
                             "path": "datasets/branch_bus_detailed.xlsx"
                         },
-                        false
+                        true
                     ],
                     [
                         {
@@ -3445,7 +3461,7 @@
                             "relative": true,
                             "path": "datasets/branch.xlsx"
                         },
-                        true
+                        false
                     ],
                     [
                         {
@@ -3507,8 +3523,7 @@
                                         "objects": {
                                             "map_type": "row",
                                             "reference": 0
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "obj_node_bus-demand": [
@@ -3546,8 +3561,7 @@
                                         "objects": {
                                             "map_type": "row",
                                             "reference": 0
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "obj_node_res-gen": [
@@ -3585,8 +3599,7 @@
                                         "objects": {
                                             "map_type": "row",
                                             "reference": 0
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "ts_renewable": [
@@ -3620,8 +3633,7 @@
                                         "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "obj_node_bus-demand_ptdf": [
@@ -3659,8 +3671,7 @@
                                         "objects": {
                                             "map_type": "row",
                                             "reference": 0
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "model_to_solve": [
@@ -3693,8 +3704,7 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -3727,8 +3737,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 2"
+                                        ]
                                     }
                                 ],
                                 "temporal_blocks": [
@@ -3755,8 +3764,7 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ]
                             },
@@ -4085,7 +4093,7 @@
                             },
                             "table_row_types": {},
                             "selected_tables": [
-                                "obj_node_demand",
+                                "obj_node_bus-demand_ptdf",
                                 "obj_node_res-gen",
                                 "model_to_solve",
                                 "temporal_blocks"
