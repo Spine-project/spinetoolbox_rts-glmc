@@ -52,7 +52,7 @@ using SpineOpt
 input_url = "sqlite:///$(@__DIR__)/.spinetoolbox/items/input_db/input_DB.sqlite"
 output_url = "sqlite:///$(@__DIR__)/.spinetoolbox/items/output_db/output_DB.sqlite"
 
-m = run_spineopt(input_url, output_url; cleanup=true)
+m = run_spineopt(input_url, output_url; cleanup=true, optimize=true)
 # optional keywords: with_optimizer=optimizer_with_attributes(Cbc.Optimizer), add_constraints=m->constraint_ramping(m)
 # execute with full address: include("C:\\HJY_projects\\spine\\RTS-GMLC_system_test\\spinetoolbox_rts-gmlc\\spine_rts-gmlc\\Spine_RTS-GMLC.jl")
 # execute with relative address: include("..\\spine\\RTS-GMLC_system_test\\spinetoolbox_rts-gmlc\\spine_rts-gmlc\\Spine_RTS-GMLC.jl")
