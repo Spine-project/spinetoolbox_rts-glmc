@@ -1258,8 +1258,8 @@
                                         "map_type": "ObjectClass",
                                         "skip_columns": [
                                             0,
-                                            5,
-                                            6
+                                            6,
+                                            7
                                         ],
                                         "read_start_row": 0,
                                         "name": {
@@ -1912,7 +1912,8 @@
                                     "3": "float",
                                     "4": "string",
                                     "5": "string",
-                                    "6": "string"
+                                    "6": "string",
+                                    "7": "string"
                                 },
                                 "rel_connection__node__node_ptdf": {
                                     "0": "string",
@@ -3363,8 +3364,7 @@
                                     "3": "duration",
                                     "4": "float",
                                     "5": "float",
-                                    "6": "float",
-                                    "7": "string"
+                                    "6": "string"
                                 },
                                 "rel_for_renewable_source": {
                                     "0": "string",
