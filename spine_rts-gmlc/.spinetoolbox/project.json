@@ -13,51 +13,51 @@
         "connections": [
             {
                 "from": [
-                    "test_importer",
-                    "right"
-                ],
-                "to": [
-                    "ds_test",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "test_file",
-                    "right"
-                ],
-                "to": [
-                    "test_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
                     "output_par_importer",
                     "right"
                 ],
                 "to": [
-                    "input_DB",
-                    "bottom"
-                ]
-            },
-            {
-                "from": [
-                    "input_DB",
-                    "right"
-                ],
-                "to": [
-                    "Spine_RTS_GMLC",
+                    "output_DB",
                     "left"
                 ]
             },
             {
                 "from": [
-                    "data_files",
+                    "data_importer_ts",
                     "right"
                 ],
                 "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "data_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
                     "left"
                 ]
             },
@@ -73,41 +73,21 @@
             },
             {
                 "from": [
-                    "output_par_def",
+                    "data_files",
                     "right"
                 ],
                 "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Spine_RTS_GMLC",
-                    "bottom"
-                ],
-                "to": [
-                    "output_DB",
-                    "right"
-                ]
-            },
-            {
-                "from": [
                     "data_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
                     "left"
                 ]
             },
             {
                 "from": [
-                    "data_importer_ts",
+                    "input_DB",
                     "right"
                 ],
                 "to": [
-                    "input_DB",
+                    "Spine_RTS_GMLC",
                     "left"
                 ]
             },
@@ -117,7 +97,27 @@
                     "right"
                 ],
                 "to": [
-                    "output_DB",
+                    "input_DB",
+                    "bottom"
+                ]
+            },
+            {
+                "from": [
+                    "test_file",
+                    "right"
+                ],
+                "to": [
+                    "test_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "test_importer",
+                    "right"
+                ],
+                "to": [
+                    "ds_test",
                     "left"
                 ]
             }
@@ -130,7 +130,7 @@
                 "short name": "input_db",
                 "description": "",
                 "x": 17.329242860696926,
-                "y": 29.682544731302976,
+                "y": 31.58359808186156,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -227,7 +227,7 @@
                 "short name": "data_files",
                 "description": "",
                 "x": -363.746612917049,
-                "y": -43.24095305235856,
+                "y": -42.29042637707927,
                 "references": [
                     {
                         "type": "path",
@@ -290,6 +290,11 @@
                         "type": "path",
                         "relative": false,
                         "path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp/test_db.xlsx"
+                    },
+                    {
+                        "type": "path",
+                        "relative": false,
+                        "path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp/ptdf+unit_constraints.sqlite"
                     }
                 ]
             }
@@ -1038,8 +1043,7 @@
                                         "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "bus": [
@@ -1056,8 +1060,7 @@
                                         "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "obj_connection": [
@@ -1076,8 +1079,7 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "rel_connection__node__node": [
@@ -1129,8 +1131,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     }
                                 ],
                                 "rel_connection__direction_node": [
@@ -1174,8 +1175,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 2
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     }
                                 ],
                                 "dc_branch": [
@@ -1192,8 +1192,7 @@
                                         "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "obj_commodity_ptdf": [
@@ -1221,8 +1220,7 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "obj_connection_ptdf": [
@@ -1249,8 +1247,7 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "obj_node-group_ptdf": [
@@ -1258,8 +1255,8 @@
                                         "map_type": "ObjectClass",
                                         "skip_columns": [
                                             0,
-                                            6,
-                                            7
+                                            5,
+                                            6
                                         ],
                                         "read_start_row": 0,
                                         "name": {
@@ -1281,8 +1278,7 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 0
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     },
                                     {
                                         "map_type": "ObjectGroup",
@@ -1303,8 +1299,7 @@
                                         "members": {
                                             "map_type": "column",
                                             "reference": 6
-                                        },
-                                        "mapping_name": "Mapping 2"
+                                        }
                                     }
                                 ],
                                 "rel_connection__node__node_ptdf": [
@@ -1356,8 +1351,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     }
                                 ],
                                 "rel__sto_struc__sto_scen": [
@@ -1401,8 +1395,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 2
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     }
                                 ],
                                 "rel_for_node_basic_structure": [
@@ -1437,8 +1430,7 @@
                                                 "map_type": "column_header",
                                                 "reference": "4"
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1471,8 +1463,7 @@
                                                 "map_type": "column_header",
                                                 "reference": "5"
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 2"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1505,8 +1496,7 @@
                                                 "map_type": "column_header",
                                                 "reference": "6"
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 3"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1539,8 +1529,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 7
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 4"
+                                        ]
                                     }
                                 ],
                                 "rel_for_node_basic_struc_ptdf": [
@@ -1575,8 +1564,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 4
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1609,8 +1597,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 2"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1643,8 +1630,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 6
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 3"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -1677,8 +1663,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 7
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 4"
+                                        ]
                                     }
                                 ]
                             },
@@ -1912,8 +1897,7 @@
                                     "3": "float",
                                     "4": "string",
                                     "5": "string",
-                                    "6": "string",
-                                    "7": "string"
+                                    "6": "string"
                                 },
                                 "rel_connection__node__node_ptdf": {
                                     "0": "string",
@@ -1986,8 +1970,7 @@
                                         "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "Spine": [
@@ -2004,8 +1987,7 @@
                                         "import_objects": true,
                                         "objects": {
                                             "map_type": "None"
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "rel_unit__direction_node": [
@@ -2048,8 +2030,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 2
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     }
                                 ],
                                 "rel_u__d_n-bus_detailed": [
@@ -2093,8 +2074,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 2
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     }
                                 ],
                                 "rel_for_units_on_resolution": [
@@ -2129,8 +2109,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2163,8 +2142,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 4
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 2"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2197,8 +2175,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 3"
+                                        ]
                                     }
                                 ],
                                 "rel_for_array_heatrates": [
@@ -2254,8 +2231,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 6
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2317,8 +2293,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 2"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2382,8 +2357,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 7
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 3"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2455,8 +2429,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 4"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2498,8 +2471,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 5"
+                                        ]
                                     }
                                 ],
                                 "obj_unit_w_parameters": [
@@ -2526,8 +2498,7 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ],
                                 "rel_for_renewable_source": [
@@ -2586,8 +2557,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2620,8 +2590,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 2"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2654,8 +2623,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 3"
+                                        ]
                                     }
                                 ],
                                 "rel_for_array_hr-bus_detailed": [
@@ -2699,8 +2667,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 6
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2750,8 +2717,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 2"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2815,8 +2781,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 7
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 3"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2888,8 +2853,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 4"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -2931,8 +2895,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 8
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 5"
+                                        ]
                                     }
                                 ],
                                 "rel_for_res-bus_detailed": [
@@ -2984,8 +2947,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -3018,8 +2980,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 2"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -3052,8 +3013,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 5
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 3"
+                                        ]
                                     }
                                 ],
                                 "rel_for_emissions": [
@@ -3105,8 +3065,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 4
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 1"
+                                        ]
                                     },
                                     {
                                         "map_type": "RelationshipClass",
@@ -3139,8 +3098,7 @@
                                                 "map_type": "column_header",
                                                 "reference": 3
                                             }
-                                        ],
-                                        "mapping_name": "Mapping 2"
+                                        ]
                                     }
                                 ],
                                 "obj_node_w_parameters": [
@@ -3167,8 +3125,7 @@
                                         "objects": {
                                             "map_type": "column",
                                             "reference": 1
-                                        },
-                                        "mapping_name": "Mapping 1"
+                                        }
                                     }
                                 ]
                             },
@@ -4266,7 +4223,7 @@
                 "short name": "test_importer",
                 "description": "",
                 "x": 46.732851517756984,
-                "y": -182.33070646156918,
+                "y": -181.3801797862899,
                 "mappings": [
                     [
                         {
@@ -4573,6 +4530,14 @@
                             "path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp/test_db.xlsx"
                         },
                         true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": false,
+                            "path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp/ptdf+unit_constraints.sqlite"
+                        },
+                        false
                     ]
                 ]
             }
