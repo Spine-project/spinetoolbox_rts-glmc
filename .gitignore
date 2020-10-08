@@ -6,4 +6,6 @@ Reference/
 Temp/
 output/
 items/
+*.sqlite
+project.json
 
