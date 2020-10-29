@@ -1,0 +1,603 @@
+{
+    "name": "mappings_test-db_xlsx",
+    "item_type": "Importer",
+    "mapping": {
+        "table_mappings": {
+            "rel_array_1": [],
+            "rel_array_2": [
+                {
+                    "map_type": "RelationshipClass",
+                    "skip_columns": [],
+                    "read_start_row": 0,
+                    "name": {
+                        "map_type": "column",
+                        "reference": 0
+                    },
+                    "parameters": {
+                        "map_type": "ParameterValue",
+                        "name": {
+                            "map_type": "column",
+                            "reference": 7
+                        },
+                        "value": {
+                            "main_value": {
+                                "map_type": "column",
+                                "reference": 8
+                            },
+                            "value_type": "array",
+                            "extra_dimensions": [
+                                {
+                                    "map_type": "None"
+                                }
+                            ]
+                        },
+                        "alternative_name": {
+                            "map_type": "None"
+                        },
+                        "parameter_value_metadata": {
+                            "map_type": "None"
+                        }
+                    },
+                    "import_objects": true,
+                    "objects": [
+                        {
+                            "map_type": "column",
+                            "reference": 2
+                        },
+                        {
+                            "map_type": "column",
+                            "reference": 4
+                        },
+                        {
+                            "map_type": "column",
+                            "reference": 6
+                        }
+                    ],
+                    "object_classes": [
+                        {
+                            "map_type": "column",
+                            "reference": 1
+                        },
+                        {
+                            "map_type": "column",
+                            "reference": 3
+                        },
+                        {
+                            "map_type": "column",
+                            "reference": 5
+                        }
+                    ],
+                    "relationship_metadata": {
+                        "map_type": "None"
+                    },
+                    "mapping_name": "Mapping 0"
+                }
+            ],
+            "rel_array_3": [
+                {
+                    "map_type": "RelationshipClass",
+                    "skip_columns": [],
+                    "read_start_row": 1,
+                    "name": {
+                        "map_type": "column",
+                        "reference": 0
+                    },
+                    "parameters": {
+                        "map_type": "ParameterValue",
+                        "name": {
+                            "map_type": "row",
+                            "reference": 0
+                        },
+                        "value": {
+                            "main_value": {
+                                "map_type": "None"
+                            },
+                            "value_type": "array",
+                            "extra_dimensions": [
+                                {
+                                    "map_type": "None"
+                                }
+                            ]
+                        },
+                        "alternative_name": {
+                            "map_type": "None"
+                        },
+                        "parameter_value_metadata": {
+                            "map_type": "None"
+                        }
+                    },
+                    "import_objects": true,
+                    "objects": [
+                        {
+                            "map_type": "column",
+                            "reference": 2
+                        },
+                        {
+                            "map_type": "column",
+                            "reference": 4
+                        }
+                    ],
+                    "object_classes": [
+                        {
+                            "map_type": "column",
+                            "reference": 1
+                        },
+                        {
+                            "map_type": "column",
+                            "reference": 3
+                        }
+                    ],
+                    "relationship_metadata": {
+                        "map_type": "None"
+                    },
+                    "mapping_name": "Mapping 0"
+                }
+            ],
+            "obj_group_node": [
+                {
+                    "map_type": "ObjectGroup",
+                    "skip_columns": [
+                        0,
+                        1,
+                        2,
+                        3
+                    ],
+                    "read_start_row": 0,
+                    "name": {
+                        "map_type": "column",
+                        "reference": 3
+                    },
+                    "parameters": {
+                        "map_type": "None"
+                    },
+                    "import_objects": true,
+                    "groups": {
+                        "map_type": "column_header",
+                        "reference": 4
+                    },
+                    "members": {
+                        "map_type": "column",
+                        "reference": 4
+                    },
+                    "mapping_name": "Mapping 0"
+                },
+                {
+                    "map_type": "ObjectClass",
+                    "skip_columns": [
+                        0,
+                        3,
+                        4
+                    ],
+                    "read_start_row": 0,
+                    "name": {
+                        "map_type": "column_header",
+                        "reference": 0
+                    },
+                    "parameters": {
+                        "map_type": "ParameterValue",
+                        "name": {
+                            "map_type": "row",
+                            "reference": -1
+                        },
+                        "value": {
+                            "main_value": {
+                                "map_type": "None"
+                            },
+                            "value_type": "single value"
+                        },
+                        "alternative_name": {
+                            "map_type": "None"
+                        },
+                        "parameter_value_metadata": {
+                            "map_type": "None"
+                        }
+                    },
+                    "import_objects": true,
+                    "objects": {
+                        "map_type": "column",
+                        "reference": 0
+                    },
+                    "object_metadata": {
+                        "map_type": "None"
+                    },
+                    "mapping_name": "Mapping 1"
+                }
+            ],
+            "timeseries_obj": [
+                {
+                    "map_type": "ObjectClass",
+                    "skip_columns": [
+                        2,
+                        3,
+                        4
+                    ],
+                    "read_start_row": 0,
+                    "name": {
+                        "map_type": "row",
+                        "reference": -1
+                    },
+                    "parameters": {
+                        "map_type": "ParameterValue",
+                        "name": {
+                            "map_type": "row",
+                            "reference": 1
+                        },
+                        "value": {
+                            "main_value": {
+                                "map_type": "None"
+                            },
+                            "value_type": "time series",
+                            "extra_dimensions": [
+                                {
+                                    "map_type": "column",
+                                    "reference": 0
+                                }
+                            ],
+                            "options": {
+                                "repeat": false,
+                                "ignore_year": false,
+                                "fixed_resolution": false
+                            }
+                        },
+                        "alternative_name": {
+                            "map_type": "None"
+                        },
+                        "parameter_value_metadata": {
+                            "map_type": "None"
+                        }
+                    },
+                    "import_objects": true,
+                    "objects": {
+                        "map_type": "row",
+                        "reference": 0
+                    },
+                    "object_metadata": {
+                        "map_type": "None"
+                    },
+                    "mapping_name": "Mapping 0"
+                },
+                {
+                    "map_type": "ObjectClass",
+                    "skip_columns": [
+                        0,
+                        1
+                    ],
+                    "read_start_row": 0,
+                    "name": {
+                        "map_type": "row",
+                        "reference": -1
+                    },
+                    "parameters": {
+                        "map_type": "ParameterValue",
+                        "name": {
+                            "map_type": "row",
+                            "reference": 1
+                        },
+                        "value": {
+                            "main_value": {
+                                "map_type": "row",
+                                "reference": 2
+                            },
+                            "value_type": "single value"
+                        },
+                        "alternative_name": {
+                            "map_type": "None"
+                        },
+                        "parameter_value_metadata": {
+                            "map_type": "None"
+                        }
+                    },
+                    "import_objects": true,
+                    "objects": {
+                        "map_type": "row",
+                        "reference": 0
+                    },
+                    "object_metadata": {
+                        "map_type": "None"
+                    },
+                    "mapping_name": "Mapping 1"
+                }
+            ],
+            "timeseries_rel": [
+                {
+                    "map_type": "RelationshipClass",
+                    "skip_columns": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10
+                    ],
+                    "read_start_row": 0,
+                    "name": {
+                        "map_type": "row",
+                        "reference": -1
+                    },
+                    "parameters": {
+                        "map_type": "ParameterValue",
+                        "name": {
+                            "map_type": "row",
+                            "reference": 4
+                        },
+                        "value": {
+                            "main_value": {
+                                "map_type": "None"
+                            },
+                            "value_type": "time series",
+                            "extra_dimensions": [
+                                {
+                                    "map_type": "column",
+                                    "reference": 0
+                                }
+                            ],
+                            "options": {
+                                "repeat": 2,
+                                "ignore_year": false,
+                                "fixed_resolution": false
+                            }
+                        },
+                        "alternative_name": {
+                            "map_type": "None"
+                        },
+                        "parameter_value_metadata": {
+                            "map_type": "None"
+                        }
+                    },
+                    "import_objects": true,
+                    "objects": [
+                        {
+                            "map_type": "row",
+                            "reference": 1
+                        },
+                        {
+                            "map_type": "row",
+                            "reference": 3
+                        }
+                    ],
+                    "object_classes": [
+                        {
+                            "map_type": "row",
+                            "reference": 0
+                        },
+                        {
+                            "map_type": "row",
+                            "reference": 2
+                        }
+                    ],
+                    "relationship_metadata": {
+                        "map_type": "None"
+                    },
+                    "mapping_name": "Mapping 0"
+                },
+                {
+                    "map_type": "RelationshipClass",
+                    "skip_columns": [
+                        0,
+                        1,
+                        2,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10
+                    ],
+                    "read_start_row": 0,
+                    "name": {
+                        "map_type": "row",
+                        "reference": -1
+                    },
+                    "parameters": {
+                        "map_type": "ParameterValue",
+                        "name": {
+                            "map_type": "row",
+                            "reference": 4
+                        },
+                        "value": {
+                            "main_value": {
+                                "map_type": "None"
+                            },
+                            "value_type": "single value"
+                        },
+                        "alternative_name": {
+                            "map_type": "None"
+                        },
+                        "parameter_value_metadata": {
+                            "map_type": "None"
+                        }
+                    },
+                    "import_objects": true,
+                    "objects": [
+                        {
+                            "map_type": "row",
+                            "reference": 1
+                        },
+                        {
+                            "map_type": "row",
+                            "reference": 3
+                        }
+                    ],
+                    "object_classes": [
+                        {
+                            "map_type": "row",
+                            "reference": 0
+                        },
+                        {
+                            "map_type": "row",
+                            "reference": 2
+                        }
+                    ],
+                    "relationship_metadata": {
+                        "map_type": "None"
+                    },
+                    "mapping_name": "Mapping 1"
+                },
+                {
+                    "map_type": "RelationshipClass",
+                    "skip_columns": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4
+                    ],
+                    "read_start_row": 0,
+                    "name": {
+                        "map_type": "row",
+                        "reference": 0
+                    },
+                    "parameters": {
+                        "map_type": "None"
+                    },
+                    "import_objects": true,
+                    "objects": [
+                        {
+                            "map_type": "row",
+                            "reference": 2
+                        },
+                        {
+                            "map_type": "row",
+                            "reference": 4
+                        }
+                    ],
+                    "object_classes": [
+                        {
+                            "map_type": "row",
+                            "reference": 1
+                        },
+                        {
+                            "map_type": "row",
+                            "reference": 3
+                        }
+                    ],
+                    "relationship_metadata": {
+                        "map_type": "None"
+                    },
+                    "mapping_name": "Mapping 2"
+                }
+            ]
+        },
+        "table_options": {
+            "rel_array_1": {
+                "header": true,
+                "row": 0,
+                "column": 0,
+                "read_until_col": true,
+                "read_until_row": true
+            },
+            "rel_array_2": {
+                "header": true,
+                "row": 0,
+                "column": 0,
+                "read_until_col": true,
+                "read_until_row": true
+            },
+            "rel_array_3": {
+                "header": true,
+                "row": 0,
+                "column": 0,
+                "read_until_col": false,
+                "read_until_row": false
+            },
+            "obj_group_node": {
+                "header": true,
+                "row": 0,
+                "column": 0,
+                "read_until_col": true,
+                "read_until_row": true
+            },
+            "timeseries_obj": {
+                "header": true,
+                "read_until_col": true,
+                "read_until_row": true
+            },
+            "timeseries_rel": {
+                "header": true,
+                "read_until_col": false,
+                "read_until_row": true
+            }
+        },
+        "table_types": {
+            "rel_array_1": {
+                "0": "string",
+                "1": "string",
+                "2": "string",
+                "3": "string",
+                "4": "string",
+                "5": "string",
+                "6": "float"
+            },
+            "rel_array_2": {
+                "0": "string",
+                "1": "string",
+                "2": "string",
+                "3": "string",
+                "4": "string",
+                "5": "string",
+                "6": "string",
+                "7": "string",
+                "8": "float"
+            },
+            "rel_array_3": {
+                "0": "string",
+                "1": "string",
+                "2": "string",
+                "3": "string",
+                "4": "string",
+                "5": "float",
+                "6": "float",
+                "7": "float"
+            },
+            "obj_group_node": {
+                "0": "string",
+                "1": "float",
+                "2": "float",
+                "3": "string",
+                "4": "string"
+            },
+            "timeseries_obj": {
+                "0": "datetime",
+                "1": "float",
+                "2": "float",
+                "3": "float",
+                "4": "float"
+            },
+            "timeseries_rel": {
+                "0": "datetime",
+                "1": "float",
+                "2": "float",
+                "3": "float",
+                "4": "float",
+                "5": "string",
+                "6": "string",
+                "7": "string",
+                "8": "string",
+                "9": "string",
+                "10": "string"
+            }
+        },
+        "table_row_types": {
+            "timeseries_obj": {
+                "0": "string",
+                "1": "string",
+                "2": "float"
+            },
+            "timeseries_rel": {
+                "0": "string",
+                "1": "string",
+                "2": "string",
+                "3": "string",
+                "4": "string"
+            }
+        },
+        "selected_tables": [
+            "timeseries_obj",
+            "timeseries_rel"
+        ],
+        "source_type": "ExcelConnector"
+    },
+    "description": ""
+}
