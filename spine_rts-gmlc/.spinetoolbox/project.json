@@ -52,147 +52,7 @@
         "connections": [
             {
                 "from": [
-                    "data_importer_ts",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_branch_bus_detailed",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "test_file",
-                    "right"
-                ],
-                "to": [
-                    "test_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "bottom"
-                ]
-            },
-            {
-                "from": [
-                    "input_DB",
-                    "right"
-                ],
-                "to": [
-                    "Spine_RTS_GMLC",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_branch_bus_detailed",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_branch_bus_detailed",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_ts",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_ts",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_def",
-                    "right"
-                ],
-                "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Spine_RTS_GMLC",
-                    "bottom"
-                ],
-                "to": [
-                    "output_DB",
-                    "right"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
-                    "output_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "test_importer",
-                    "right"
-                ],
-                "to": [
-                    "ds_test",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_generation",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_generation",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_generation",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_storage",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_storage",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_storage",
+                    "data_importer_branch",
                     "right"
                 ],
                 "to": [
@@ -212,7 +72,147 @@
             },
             {
                 "from": [
-                    "data_importer_branch",
+                    "data_importer_storage",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_storage",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_storage",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_generation",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_generation",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_generation",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "test_importer",
+                    "right"
+                ],
+                "to": [
+                    "ds_test",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
+                    "output_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_ts",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_ts",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_branch_bus_detailed",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_branch_bus_detailed",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "input_DB",
+                    "right"
+                ],
+                "to": [
+                    "Spine_RTS_GMLC",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "bottom"
+                ]
+            },
+            {
+                "from": [
+                    "test_file",
+                    "right"
+                ],
+                "to": [
+                    "test_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_branch_bus_detailed",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
                     "right"
                 ],
                 "to": [
@@ -368,8 +368,8 @@
         "data_files_generation": {
             "type": "Data Connection",
             "description": "",
-            "x": -403.2691316238809,
-            "y": -250.84774478969928,
+            "x": -406.0578081459913,
+            "y": -271.76281870552685,
             "references": [
                 {
                     "type": "path",

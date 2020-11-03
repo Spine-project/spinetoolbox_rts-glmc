@@ -422,7 +422,7 @@
                 "row": 1,
                 "header": true,
                 "read_until_col": true,
-                "read_until_row": true,
+                "read_until_row": false,
                 "column": 0
             },
             "temporal_blocks": {
@@ -715,7 +715,7 @@
             "alternative_scenario": {
                 "0": "string",
                 "1": "string",
-                "2": "boolean",
+                "2": "string",
                 "3": "string",
                 "4": "string",
                 "5": "string"
