@@ -1,0 +1,139 @@
+{
+    "name": "mappings_result-parameters_xlsx",
+    "item_type": "Importer",
+    "mapping": {
+        "table_mappings": {
+            "obj_output": [
+                {
+                    "map_type": "ObjectClass",
+                    "skip_columns": [],
+                    "read_start_row": 0,
+                    "name": {
+                        "map_type": "column",
+                        "reference": 0
+                    },
+                    "parameters": {
+                        "map_type": "None"
+                    },
+                    "import_objects": true,
+                    "objects": {
+                        "map_type": "column",
+                        "reference": 1
+                    },
+                    "object_metadata": {
+                        "map_type": "None"
+                    },
+                    "mapping_name": "Mapping 0"
+                }
+            ],
+            "obj_report": [
+                {
+                    "map_type": "ObjectClass",
+                    "skip_columns": [],
+                    "read_start_row": 0,
+                    "name": {
+                        "map_type": "column",
+                        "reference": 0
+                    },
+                    "parameters": {
+                        "map_type": "None"
+                    },
+                    "import_objects": true,
+                    "objects": {
+                        "map_type": "column",
+                        "reference": 1
+                    },
+                    "object_metadata": {
+                        "map_type": "None"
+                    },
+                    "mapping_name": "Mapping 0"
+                }
+            ],
+            "rel_report__output": [
+                {
+                    "map_type": "RelationshipClass",
+                    "skip_columns": [],
+                    "read_start_row": 0,
+                    "name": {
+                        "map_type": "column",
+                        "reference": 0
+                    },
+                    "parameters": {
+                        "map_type": "None"
+                    },
+                    "import_objects": true,
+                    "objects": [
+                        {
+                            "map_type": "column",
+                            "reference": 1
+                        },
+                        {
+                            "map_type": "column",
+                            "reference": 2
+                        }
+                    ],
+                    "object_classes": [
+                        {
+                            "map_type": "column_header",
+                            "reference": 1
+                        },
+                        {
+                            "map_type": "column_header",
+                            "reference": 2
+                        }
+                    ],
+                    "relationship_metadata": {
+                        "map_type": "None"
+                    },
+                    "mapping_name": "Mapping 0"
+                }
+            ]
+        },
+        "table_options": {
+            "obj_output": {
+                "header": true,
+                "row": 0,
+                "column": 0,
+                "read_until_col": true,
+                "read_until_row": true
+            },
+            "obj_report": {
+                "header": true,
+                "row": 0,
+                "column": 0,
+                "read_until_col": true,
+                "read_until_row": true
+            },
+            "rel_report__output": {
+                "header": true,
+                "row": 0,
+                "column": 0,
+                "read_until_col": true,
+                "read_until_row": true
+            }
+        },
+        "table_types": {
+            "obj_output": {
+                "0": "string",
+                "1": "string"
+            },
+            "obj_report": {
+                "0": "string",
+                "1": "string"
+            },
+            "rel_report__output": {
+                "0": "string",
+                "1": "string",
+                "2": "string"
+            }
+        },
+        "table_row_types": {},
+        "selected_tables": [
+            "obj_output",
+            "obj_report",
+            "rel_report__output"
+        ],
+        "source_type": "ExcelConnector"
+    },
+    "description": ""
+}
