@@ -52,147 +52,7 @@
         "connections": [
             {
                 "from": [
-                    "data_importer_ts",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_branch_bus_detailed",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "test_file",
-                    "right"
-                ],
-                "to": [
-                    "test_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "bottom"
-                ]
-            },
-            {
-                "from": [
-                    "input_DB",
-                    "right"
-                ],
-                "to": [
-                    "Spine_RTS_GMLC",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_branch_bus_detailed",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_branch_bus_detailed",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_ts",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_ts",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_def",
-                    "right"
-                ],
-                "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Spine_RTS_GMLC",
-                    "bottom"
-                ],
-                "to": [
-                    "output_DB",
-                    "right"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
-                    "output_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "test_importer",
-                    "right"
-                ],
-                "to": [
-                    "ds_test",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_generation",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_generation",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_generation",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_storage",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_storage",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_storage",
+                    "data_importer_branch",
                     "right"
                 ],
                 "to": [
@@ -212,7 +72,147 @@
             },
             {
                 "from": [
-                    "data_importer_branch",
+                    "data_importer_storage",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_storage",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_storage",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_generation",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_generation",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_generation",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "test_importer",
+                    "right"
+                ],
+                "to": [
+                    "ds_test",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
+                    "output_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_ts",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_ts",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_branch_bus_detailed",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_branch_bus_detailed",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "input_DB",
+                    "right"
+                ],
+                "to": [
+                    "Spine_RTS_GMLC",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "bottom"
+                ]
+            },
+            {
+                "from": [
+                    "test_file",
+                    "right"
+                ],
+                "to": [
+                    "test_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_branch_bus_detailed",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
                     "right"
                 ],
                 "to": [
@@ -227,7 +227,7 @@
             "type": "Data Store",
             "description": "",
             "x": 160.09215569907346,
-            "y": -33.60767152834572,
+            "y": -33.01498374762511,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -245,7 +245,7 @@
             "type": "Data Store",
             "description": "",
             "x": 206.1073454030689,
-            "y": 284.4199833465911,
+            "y": 285.0126711273117,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -263,7 +263,7 @@
             "type": "Data Store",
             "description": "",
             "x": 403.00140859618034,
-            "y": -36.07824098602488,
+            "y": -35.48555320530427,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -281,7 +281,7 @@
             "type": "Data Store",
             "description": "",
             "x": 472.3186275660721,
-            "y": -281.38958091251203,
+            "y": -280.7968931317914,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -299,7 +299,7 @@
             "type": "Data Store",
             "description": "",
             "x": 374.37597407308306,
-            "y": -169.5502332249164,
+            "y": -168.9575454441958,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -317,7 +317,7 @@
             "type": "Data Connection",
             "description": "",
             "x": -416.3186275660721,
-            "y": 82.29801486164772,
+            "y": 82.89070264236832,
             "references": [
                 {
                     "type": "path",
@@ -330,7 +330,7 @@
             "type": "Data Connection",
             "description": "",
             "x": -428.93992571332103,
-            "y": 172.30426367543132,
+            "y": 172.89695145615192,
             "references": [
                 {
                     "type": "path",
@@ -343,7 +343,7 @@
             "type": "Data Connection",
             "description": "",
             "x": -427.89882522380555,
-            "y": 286.51298343873395,
+            "y": 287.10567121945456,
             "references": [
                 {
                     "type": "path",
@@ -356,7 +356,7 @@
             "type": "Data Connection",
             "description": "",
             "x": 231.121289021713,
-            "y": -282.54567241210617,
+            "y": -281.95298463138556,
             "references": [
                 {
                     "type": "path",
@@ -369,7 +369,7 @@
             "type": "Data Connection",
             "description": "",
             "x": -413.8078081459913,
-            "y": -279.5128187055268,
+            "y": -278.9201309248062,
             "references": [
                 {
                     "type": "path",
@@ -382,7 +382,7 @@
             "type": "Data Connection",
             "description": "",
             "x": -416.12995811667633,
-            "y": -156.6827819884594,
+            "y": -156.0900942077388,
             "references": [
                 {
                     "type": "path",
@@ -395,7 +395,7 @@
             "type": "Data Connection",
             "description": "",
             "x": -414.7978889667547,
-            "y": -31.662386338243095,
+            "y": -31.069698557522486,
             "references": [
                 {
                     "type": "path",
@@ -408,7 +408,7 @@
             "type": "Tool",
             "description": "",
             "x": 335.22850675151915,
-            "y": 93.01209627870261,
+            "y": 93.60478405942322,
             "specification": "SpineModel",
             "execute_in_work": false,
             "cmd_line_args": []
@@ -417,7 +417,7 @@
             "type": "Importer",
             "description": "Convert data files into Spine DB",
             "x": -117.63882433333404,
-            "y": 82.00116349215705,
+            "y": 82.59385127287766,
             "specification": "mappings_branch-bus-detailed_xlsx",
             "cancel_on_error": true,
             "file_selection": [
@@ -435,7 +435,7 @@
             "type": "Importer",
             "description": "",
             "x": -117.70558649792628,
-            "y": 176.83347121969913,
+            "y": 177.42615900041974,
             "specification": "mappings_TimeSeries_xlsx",
             "cancel_on_error": true,
             "file_selection": [
@@ -453,7 +453,7 @@
             "type": "Importer",
             "description": "",
             "x": -103.83967591695671,
-            "y": 282.0042130205747,
+            "y": 282.5969008012953,
             "specification": "mappings_output-parameters_xlsx",
             "cancel_on_error": true,
             "file_selection": [
@@ -471,7 +471,7 @@
             "type": "Importer",
             "description": "",
             "x": 355.33769843167033,
-            "y": -283.6983590001752,
+            "y": -283.10567121945456,
             "specification": "mappings_test-db_xlsx",
             "cancel_on_error": true,
             "file_selection": [
@@ -489,7 +489,7 @@
             "type": "Importer",
             "description": "",
             "x": -119.37584637419943,
-            "y": -265.21364615293675,
+            "y": -264.62095837221614,
             "specification": "mappings_generation_xlsx",
             "cancel_on_error": true,
             "file_selection": [
@@ -507,7 +507,7 @@
             "type": "Importer",
             "description": "",
             "x": -121.79039423361428,
-            "y": -149.15740763624905,
+            "y": -148.56471985552844,
             "specification": "mappings_storage_xlsx",
             "cancel_on_error": true,
             "file_selection": [
@@ -525,7 +525,7 @@
             "type": "Importer",
             "description": "",
             "x": -121.64952884663131,
-            "y": -37.22794932552496,
+            "y": -36.63526154480435,
             "specification": "mappings_branch_xlsx",
             "cancel_on_error": true,
             "file_selection": [
