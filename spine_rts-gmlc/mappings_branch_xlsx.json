@@ -20,8 +20,7 @@
                     },
                     "object_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 }
             ],
             "bus": [
@@ -41,8 +40,7 @@
                     },
                     "object_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 }
             ],
             "obj_connection": [
@@ -64,8 +62,7 @@
                     },
                     "object_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 }
             ],
             "rel_connection__node__node": [
@@ -128,8 +125,7 @@
                     ],
                     "relationship_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 }
             ],
             "rel_connection__direction_node": [
@@ -184,8 +180,7 @@
                     ],
                     "relationship_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 }
             ],
             "rel__sto_struc__sto_scen": [
@@ -240,8 +235,7 @@
                     ],
                     "relationship_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 }
             ],
             "rel_for_node_basic_structure": [
@@ -279,8 +273,7 @@
                     ],
                     "relationship_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 },
                 {
                     "map_type": "RelationshipClass",
@@ -316,8 +309,7 @@
                     ],
                     "relationship_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 1"
+                    }
                 },
                 {
                     "map_type": "RelationshipClass",
@@ -353,8 +345,7 @@
                     ],
                     "relationship_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 2"
+                    }
                 },
                 {
                     "map_type": "RelationshipClass",
@@ -390,8 +381,7 @@
                     ],
                     "relationship_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 3"
+                    }
                 }
             ]
         },

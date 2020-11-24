@@ -1690,6 +1690,7 @@
         "selected_tables": [
             "obj_unit_w_parameters",
             "obj_node_w_parameters",
+            "rel_for_units_on_resolution",
             "rel_u__d_n-bus_detailed",
             "rel_for_array_hr-bus_detailed",
             "rel_for_res-bus_detailed",

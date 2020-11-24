@@ -1,5 +1,5 @@
 {
-    "name": "SpineModel",
+    "name": "SpineOpt",
     "tooltype": "julia",
     "includes": [
         "Spine_RTS-GMLC.jl"

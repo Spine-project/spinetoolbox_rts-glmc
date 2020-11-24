@@ -253,9 +253,11 @@
                 {
                     "map_type": "ObjectClass",
                     "skip_columns": [
+                        7,
                         8,
                         9,
-                        7
+                        10,
+                        11
                     ],
                     "read_start_row": 0,
                     "name": {
@@ -307,21 +309,21 @@
                     "objects": [
                         {
                             "map_type": "column",
-                            "reference": 8
+                            "reference": 9
                         },
                         {
                             "map_type": "column",
-                            "reference": 9
+                            "reference": 11
                         }
                     ],
                     "object_classes": [
                         {
-                            "map_type": "column_header",
+                            "map_type": "column",
                             "reference": 8
                         },
                         {
-                            "map_type": "column_header",
-                            "reference": 9
+                            "map_type": "column",
+                            "reference": 10
                         }
                     ],
                     "relationship_metadata": {
@@ -379,6 +381,38 @@
                         "reference": 0
                     },
                     "mapping_name": "Mapping 0"
+                },
+                {
+                    "map_type": "Scenario",
+                    "skip_columns": [],
+                    "read_start_row": 0,
+                    "name": {
+                        "map_type": "column",
+                        "reference": 1
+                    },
+                    "active": {
+                        "map_type": "column",
+                        "reference": 2
+                    },
+                    "mapping_name": "Mapping 1"
+                },
+                {
+                    "map_type": "ScenarioAlternative",
+                    "skip_columns": [],
+                    "read_start_row": 0,
+                    "scenario_name": {
+                        "map_type": "column",
+                        "reference": 3
+                    },
+                    "alternative_name": {
+                        "map_type": "column",
+                        "reference": 4
+                    },
+                    "before_alternative_name": {
+                        "map_type": "column",
+                        "reference": 5
+                    },
+                    "mapping_name": "Mapping 2"
                 }
             ]
         },
@@ -703,7 +737,9 @@
                 "6": "string",
                 "7": "string",
                 "8": "string",
-                "9": "string"
+                "9": "string",
+                "10": "string",
+                "11": "string"
             },
             "temporal_blocks": {
                 "0": "string",
@@ -715,7 +751,7 @@
             "alternative_scenario": {
                 "0": "string",
                 "1": "string",
-                "2": "string",
+                "2": "boolean",
                 "3": "string",
                 "4": "string",
                 "5": "string"

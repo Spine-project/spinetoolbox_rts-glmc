@@ -20,7 +20,8 @@
                     },
                     "object_metadata": {
                         "map_type": "None"
-                    }
+                    },
+                    "mapping_name": "Mapping 0"
                 }
             ],
             "rel_stor-eff": [
@@ -83,7 +84,8 @@
                     ],
                     "relationship_metadata": {
                         "map_type": "None"
-                    }
+                    },
+                    "mapping_name": "Mapping 0"
                 }
             ],
             "rel_stor_eff-bus_detailed": [
@@ -146,7 +148,8 @@
                     ],
                     "relationship_metadata": {
                         "map_type": "None"
-                    }
+                    },
+                    "mapping_name": "Mapping 0"
                 }
             ],
             "obj_node_for-storage": [
@@ -184,7 +187,8 @@
                     },
                     "object_metadata": {
                         "map_type": "None"
-                    }
+                    },
+                    "mapping_name": "Mapping 0"
                 }
             ]
         },

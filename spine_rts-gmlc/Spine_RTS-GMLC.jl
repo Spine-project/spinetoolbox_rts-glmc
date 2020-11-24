@@ -25,30 +25,6 @@ using SpineOpt
 #     using Cbc
 # end
 
-# Custom constraint for ramp up and down.
-# function constraint_ramping(m::Model)
-#     @fetch unit_flow, units_on, units_started_up = m.ext[:variables]
-#     cons = m.ext[:constraints][:ramping] = Dict()
-#     for (u, n, d) in indices(ramp_up)
-#         for (u, n, d) in indices(ramp_down)
-#             # ramp_up and ramp_down must be defined together
-#             for (u, n, d, t_after) in unit_flow_indices(unit=u, node=n, direction=d)
-#                 for (u, n, d, t_before) in unit_flow_indices(
-#                     unit=u, node=n, direction=d, t=t_before_t(t_after=t_after))
-#                     cons[u, n, d, t_before, t_after] = @constraint(
-#                         m,
-#                         unit_flow[u, n, d, t_after] - unit_flow[u, n, d, t_before]
-#                         # / duration(t_after)
-#                         <=
-#                         + ramp_up[(unit=u, node=n, direction=d)] * units_on[u, t_before]
-#                         + ramp_down[(unit=u, node=n, direction=d)] * units_started_up[u, t_after]
-#                     )
-#                 end
-#             end
-#         end
-#     end
-# end
-
 input_url = "sqlite:///$(@__DIR__)/.spinetoolbox/items/input_db/input_DB.sqlite"
 output_url = "sqlite:///$(@__DIR__)/.spinetoolbox/items/output_db/output_DB.sqlite"
 
