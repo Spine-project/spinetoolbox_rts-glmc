@@ -1,0 +1,18 @@
+{
+    "name": "SpineOpt_test",
+    "tooltype": "julia",
+    "includes": [
+        "run_spineopt_test.jl"
+    ],
+    "description": "",
+    "inputfiles": [
+        "toolbox_input/test_db.sqlite"
+    ],
+    "inputfiles_opt": [],
+    "outputfiles": [
+        "toolbox_output/outputDB.sqlite"
+    ],
+    "cmdline_args": [],
+    "execute_in_work": false,
+    "includes_main_path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp"
+}

@@ -49,8 +49,7 @@
                     },
                     "object_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 }
             ],
             "obj_node_bus-demand": [
@@ -99,8 +98,7 @@
                     },
                     "object_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 }
             ],
             "obj_node_res-gen": [
@@ -149,8 +147,7 @@
                     },
                     "object_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 }
             ],
             "ts_renewable": [
@@ -195,8 +192,7 @@
                     },
                     "object_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 }
             ],
             "obj_node_bus-demand_ptdf": [
@@ -245,8 +241,7 @@
                     },
                     "object_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 }
             ],
             "model_to_solve": [
@@ -291,8 +286,7 @@
                     },
                     "object_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 },
                 {
                     "map_type": "RelationshipClass",
@@ -328,8 +322,7 @@
                     ],
                     "relationship_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 1"
+                    }
                 }
             ],
             "temporal_blocks": [
@@ -367,8 +360,7 @@
                     },
                     "object_metadata": {
                         "map_type": "None"
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 }
             ],
             "alternative_scenario": [
@@ -379,8 +371,7 @@
                     "name": {
                         "map_type": "column",
                         "reference": 0
-                    },
-                    "mapping_name": "Mapping 0"
+                    }
                 },
                 {
                     "map_type": "Scenario",
@@ -393,8 +384,7 @@
                     "active": {
                         "map_type": "column",
                         "reference": 2
-                    },
-                    "mapping_name": "Mapping 1"
+                    }
                 },
                 {
                     "map_type": "ScenarioAlternative",
@@ -411,8 +401,7 @@
                     "before_alternative_name": {
                         "map_type": "column",
                         "reference": 5
-                    },
-                    "mapping_name": "Mapping 2"
+                    }
                 }
             ]
         },
