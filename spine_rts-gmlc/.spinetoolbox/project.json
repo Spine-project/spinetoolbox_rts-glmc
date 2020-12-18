@@ -57,170 +57,13 @@
         "connections": [
             {
                 "from": [
-                    "test_importer",
+                    "SpineOpt_test",
                     "right"
                 ],
                 "to": [
-                    "ds_test",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Spine_RTS_GMLC",
-                    "bottom"
-                ],
-                "to": [
-                    "output_DB",
-                    "right"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_ts",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_ts",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_branch",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_branch",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_branch",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_storage",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_storage",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_storage",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_generation",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_files_generation",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_generation",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_importer",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
+                    "ds_test_output",
                     "bottom"
                 ]
-            },
-            {
-                "from": [
-                    "data_files_branch_bus_detailed",
-                    "right"
-                ],
-                "to": [
-                    "data_importer_branch_bus_detailed",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "test_file",
-                    "right"
-                ],
-                "to": [
-                    "test_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_branch_bus_detailed",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "data_importer_ts",
-                    "right"
-                ],
-                "to": [
-                    "input_DB",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "output_par_def",
-                    "right"
-                ],
-                "to": [
-                    "output_par_importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "input_DB",
-                    "right"
-                ],
-                "to": [
-                    "Spine_RTS_GMLC",
-                    "left"
-                ],
-                "resource_filters": {
-                    "{db_url@input_DB}": {
-                        "scenario_filter": [
-                            1
-                        ]
-                    }
-                }
             },
             {
                 "from": [
@@ -241,12 +84,169 @@
             },
             {
                 "from": [
-                    "SpineOpt_test",
+                    "input_DB",
                     "right"
                 ],
                 "to": [
-                    "ds_test_output",
+                    "Spine_RTS_GMLC",
+                    "left"
+                ],
+                "resource_filters": {
+                    "{db_url@input_DB}": {
+                        "scenario_filter": [
+                            1
+                        ]
+                    }
+                }
+            },
+            {
+                "from": [
+                    "output_par_def",
+                    "right"
+                ],
+                "to": [
+                    "output_par_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_ts",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_branch_bus_detailed",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "test_file",
+                    "right"
+                ],
+                "to": [
+                    "test_importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_branch_bus_detailed",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_branch_bus_detailed",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "output_par_importer",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
                     "bottom"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_generation",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_generation",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_generation",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_storage",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_storage",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_storage",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_branch",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_branch",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_importer_branch",
+                    "right"
+                ],
+                "to": [
+                    "input_DB",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "data_files_ts",
+                    "right"
+                ],
+                "to": [
+                    "data_importer_ts",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Spine_RTS_GMLC",
+                    "bottom"
+                ],
+                "to": [
+                    "output_DB",
+                    "right"
+                ]
+            },
+            {
+                "from": [
+                    "test_importer",
+                    "right"
+                ],
+                "to": [
+                    "ds_test",
+                    "left"
                 ]
             }
         ]
@@ -323,7 +323,7 @@
                 "database": {
                     "type": "path",
                     "relative": false,
-                    "path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp/output_test.sqlite"
+                    "path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp/toolbox_output_predefined/output_test.sqlite"
                 }
             },
             "cancel_on_error": true

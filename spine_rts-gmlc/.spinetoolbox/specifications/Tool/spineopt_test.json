@@ -10,7 +10,7 @@
     ],
     "inputfiles_opt": [],
     "outputfiles": [
-        "toolbox_output/output_test.sqlite"
+        "toolbox_output_predefined/output_test.sqlite"
     ],
     "cmdline_args": [],
     "execute_in_work": false,
