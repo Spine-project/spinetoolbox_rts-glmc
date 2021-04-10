@@ -1,6 +1,6 @@
 {
     "project": {
-        "version": 5,
+        "version": 6,
         "name": "Spine_RTS-GMLC",
         "description": "A tutorial case study",
         "specifications": {
@@ -437,14 +437,12 @@
             "execute_in_work": false,
             "cmd_line_args": [
                 {
-                    "type": "path",
-                    "relative": false,
-                    "path": "{db_url@ds_test}"
+                    "type": "resource",
+                    "arg": "db_url@ds_test"
                 },
                 {
-                    "type": "path",
-                    "relative": false,
-                    "path": "{db_url@ds_test_output}"
+                    "type": "resource",
+                    "arg": "db_url@ds_test_output"
                 }
             ]
         },
@@ -457,11 +455,7 @@
             "cancel_on_error": true,
             "file_selection": [
                 [
-                    {
-                        "type": "path",
-                        "relative": true,
-                        "path": "datasets/branch_bus_detailed.xlsx"
-                    },
+                    "C:\\HJY_projects\\spine\\RTS-GMLC_system_test\\spinetoolbox_rts-gmlc\\spine_rts-gmlc\\datasets\\branch_bus_detailed.xlsx",
                     true
                 ]
             ]
@@ -475,11 +469,7 @@
             "cancel_on_error": true,
             "file_selection": [
                 [
-                    {
-                        "type": "path",
-                        "relative": true,
-                        "path": "datasets/TimeSeries.xlsx"
-                    },
+                    "C:\\HJY_projects\\spine\\RTS-GMLC_system_test\\spinetoolbox_rts-gmlc\\spine_rts-gmlc\\datasets\\TimeSeries.xlsx",
                     true
                 ]
             ]
@@ -493,11 +483,7 @@
             "cancel_on_error": true,
             "file_selection": [
                 [
-                    {
-                        "type": "path",
-                        "relative": true,
-                        "path": "datasets/output_parameters.xlsx"
-                    },
+                    "C:\\HJY_projects\\spine\\RTS-GMLC_system_test\\spinetoolbox_rts-gmlc\\spine_rts-gmlc\\datasets\\output_parameters.xlsx",
                     true
                 ]
             ]
@@ -511,11 +497,7 @@
             "cancel_on_error": true,
             "file_selection": [
                 [
-                    {
-                        "type": "path",
-                        "relative": false,
-                        "path": "C:/HJY_projects/spine/RTS-GMLC_system_test/spinetoolbox_rts-gmlc/Temp/test_db.xlsx"
-                    },
+                    "C:\\HJY_projects\\spine\\RTS-GMLC_system_test\\spinetoolbox_rts-gmlc\\Temp\\test_db.xlsx",
                     true
                 ]
             ]
@@ -529,11 +511,7 @@
             "cancel_on_error": true,
             "file_selection": [
                 [
-                    {
-                        "type": "path",
-                        "relative": true,
-                        "path": "datasets/gen.xlsx"
-                    },
+                    "C:\\HJY_projects\\spine\\RTS-GMLC_system_test\\spinetoolbox_rts-gmlc\\spine_rts-gmlc\\datasets\\gen.xlsx",
                     true
                 ]
             ]
@@ -547,11 +525,7 @@
             "cancel_on_error": true,
             "file_selection": [
                 [
-                    {
-                        "type": "path",
-                        "relative": true,
-                        "path": "datasets/storage.xlsx"
-                    },
+                    "C:\\HJY_projects\\spine\\RTS-GMLC_system_test\\spinetoolbox_rts-gmlc\\spine_rts-gmlc\\datasets\\storage.xlsx",
                     true
                 ]
             ]
@@ -565,11 +539,7 @@
             "cancel_on_error": true,
             "file_selection": [
                 [
-                    {
-                        "type": "path",
-                        "relative": true,
-                        "path": "datasets/branch.xlsx"
-                    },
+                    "C:\\HJY_projects\\spine\\RTS-GMLC_system_test\\spinetoolbox_rts-gmlc\\spine_rts-gmlc\\datasets\\branch.xlsx",
                     false
                 ]
             ]
